@@ -1,0 +1,876 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </radialGradient>
+    <radialGradient id="body-grad" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="head-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <radialGradient id="belly-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#faf5ef"/>
+      <stop offset="100%" stop-color="#e8ddd0"/>
+    </radialGradient>
+    <radialGradient id="eye-patch-grad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="eye-white-grad" cx="45%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </radialGradient>
+    <radialGradient id="ear-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <radialGradient id="blush-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nose-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </radialGradient>
+    <radialGradient id="arm-left-grad" cx="55%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="arm-right-grad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="foot-grad" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <radialGradient id="foot-pad-grad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#4a4a5a"/>
+      <stop offset="100%" stop-color="#2a2a3a"/>
+    </radialGradient>
+    <!-- Shadow gradient -->
+    <radialGradient id="shadow-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Bucket body gradient -->
+    <linearGradient id="bucket-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="30%" stop-color="#C8963A"/>
+      <stop offset="70%" stop-color="#C8963A"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <!-- Bucket rim gradient -->
+    <linearGradient id="bucket-rim-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a0a0a0"/>
+      <stop offset="50%" stop-color="#d4d4d4"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </linearGradient>
+    <!-- Bamboo stalk gradient -->
+    <linearGradient id="bamboo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5a8a3c"/>
+      <stop offset="40%" stop-color="#7ac450"/>
+      <stop offset="100%" stop-color="#4a7a30"/>
+    </linearGradient>
+    <!-- Bamboo leaf gradient -->
+    <linearGradient id="bamboo-leaf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6abf40"/>
+      <stop offset="100%" stop-color="#3a8a20"/>
+    </linearGradient>
+    <!-- Bucket shadow -->
+    <radialGradient id="bucket-shadow-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Lion body gradient -->
+    <radialGradient id="lion-body-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#f0b44a"/>
+      <stop offset="100%" stop-color="#c8862a"/>
+    </radialGradient>
+    <!-- Lion mane gradient -->
+    <radialGradient id="lion-mane-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </radialGradient>
+    <!-- Lion head gradient -->
+    <radialGradient id="lion-head-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d99a20"/>
+    </radialGradient>
+    <!-- Lion shadow -->
+    <radialGradient id="lion-shadow-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Real lion gradients -->
+    <radialGradient id="real-lion-body-grad" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#e8a840"/>
+      <stop offset="100%" stop-color="#a06820"/>
+    </radialGradient>
+    <radialGradient id="real-lion-mane-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#c47a18"/>
+      <stop offset="100%" stop-color="#7c3a0e"/>
+    </radialGradient>
+    <radialGradient id="real-lion-head-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#f0c050"/>
+      <stop offset="100%" stop-color="#c89030"/>
+    </radialGradient>
+    <radialGradient id="real-lion-shadow-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="real-lion-eye-grad" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#d4a020"/>
+      <stop offset="100%" stop-color="#8a6010"/>
+    </radialGradient>
+    <!-- Birthday hat gradient -->
+    <linearGradient id="hat-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="50%" stop-color="#e11d9e"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+    <!-- Hat stripe -->
+    <linearGradient id="hat-stripe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <!-- Pompom gradient -->
+    <radialGradient id="pompom-grad" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </radialGradient>
+    <!-- Room wall gradient -->
+    <linearGradient id="wall-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#e8e0d4"/>
+    </linearGradient>
+    <!-- Floor gradient -->
+    <linearGradient id="floor-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#c4a882"/>
+      <stop offset="100%" stop-color="#a68a64"/>
+    </linearGradient>
+    <!-- Window sky gradient -->
+    <linearGradient id="window-sky-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <!-- Window frame gradient -->
+    <linearGradient id="window-frame-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4d4d8"/>
+      <stop offset="50%" stop-color="#f4f4f5"/>
+      <stop offset="100%" stop-color="#d4d4d8"/>
+    </linearGradient>
+    <!-- Sunset gradient for photo frame -->
+    <linearGradient id="sunset-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="35%" stop-color="#fb923c"/>
+      <stop offset="65%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <!-- Photo frame wood gradient -->
+    <linearGradient id="frame-wood-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background - Room interior -->
+  <g id="background">
+    <!-- Wall -->
+    <rect x="0" y="0" width="1000" height="680" fill="url(#wall-grad)"/>
+    <!-- Baseboard -->
+    <rect x="0" y="660" width="1000" height="20" fill="#a8a29e"/>
+    <rect x="0" y="660" width="1000" height="4" fill="#d6d3d1"/>
+    <!-- Floor -->
+    <rect x="0" y="680" width="1000" height="320" fill="url(#floor-grad)"/>
+    <!-- Floor board lines -->
+    <line x1="0" y1="750" x2="1000" y2="750" stroke="#b89a72" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="820" x2="1000" y2="820" stroke="#b89a72" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="890" x2="1000" y2="890" stroke="#b89a72" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="960" x2="1000" y2="960" stroke="#b89a72" stroke-width="1" opacity="0.4"/>
+    <!-- Vertical board seams -->
+    <line x1="200" y1="680" x2="200" y2="1000" stroke="#b89a72" stroke-width="0.8" opacity="0.25"/>
+    <line x1="450" y1="680" x2="450" y2="1000" stroke="#b89a72" stroke-width="0.8" opacity="0.25"/>
+    <line x1="700" y1="680" x2="700" y2="1000" stroke="#b89a72" stroke-width="0.8" opacity="0.25"/>
+
+    <!-- === Window on the left wall === -->
+    <g id="window-1">
+      <!-- Window hole - sky visible through it -->
+      <rect x="30" y="180" width="180" height="250" rx="3" fill="url(#window-sky-grad)"/>
+      <!-- Clouds outside -->
+      <ellipse cx="80" cy="220" rx="35" ry="14" fill="#ffffff" opacity="0.8"/>
+      <ellipse cx="60" cy="218" rx="20" ry="10" fill="#ffffff" opacity="0.7"/>
+      <ellipse cx="100" cy="216" rx="18" ry="9" fill="#ffffff" opacity="0.7"/>
+      <ellipse cx="160" cy="250" rx="25" ry="10" fill="#ffffff" opacity="0.6"/>
+      <!-- Distant hills outside -->
+      <ellipse cx="70" cy="400" rx="80" ry="30" fill="#86efac" opacity="0.5"/>
+      <ellipse cx="160" cy="405" rx="60" ry="25" fill="#4ade80" opacity="0.5"/>
+      <!-- Green ground outside -->
+      <rect x="30" y="380" width="180" height="50" fill="#4ade80" opacity="0.4"/>
+      <!-- Birds flying past outside -->
+      <!-- Bird 1 - small, crossing left to right -->
+      <g id="bird-1" opacity="0.7">
+        <path d="M 45 200 Q 50 194 56 200 Q 62 194 68 200" fill="none" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;180,15;0,0" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <!-- Bird 2 - slightly lower, offset timing -->
+      <g id="bird-2" opacity="0.6">
+        <path d="M 160 240 Q 164 235 169 240 Q 174 235 179 240" fill="none" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;-170,10;0,0" dur="10s" repeatCount="indefinite"/>
+      </g>
+      <!-- Bird 3 - high up -->
+      <g id="bird-3" opacity="0.5">
+        <path d="M 100 195 Q 103 191 107 195 Q 111 191 115 195" fill="none" stroke="#334155" stroke-width="1.2" stroke-linecap="round"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;100,8;0,0" dur="12s" repeatCount="indefinite"/>
+      </g>
+      <!-- Bird 4 - mid area, right to left -->
+      <g id="bird-4" opacity="0.55">
+        <path d="M 180 270 Q 184 265 188 270 Q 192 265 196 270" fill="none" stroke="#334155" stroke-width="1.3" stroke-linecap="round"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;-160,-5;0,0" dur="9s" repeatCount="indefinite"/>
+      </g>
+      <!-- Bird 5 - tiny, fast -->
+      <g id="bird-5" opacity="0.45">
+        <path d="M 70 260 Q 73 257 76 260 Q 79 257 82 260" fill="none" stroke="#334155" stroke-width="1" stroke-linecap="round"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0;140,12;0,0" dur="7s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- Window frame - outer -->
+      <rect x="24" y="174" width="192" height="262" rx="5" fill="none" stroke="url(#window-frame-grad)" stroke-width="12"/>
+      <!-- Window cross bars -->
+      <line x1="120" y1="174" x2="120" y2="436" stroke="url(#window-frame-grad)" stroke-width="8"/>
+      <line x1="24" y1="305" x2="216" y2="305" stroke="url(#window-frame-grad)" stroke-width="8"/>
+      <!-- Window sill -->
+      <rect x="18" y="430" width="204" height="14" rx="3" fill="#d4d4d8"/>
+      <rect x="18" y="430" width="204" height="4" rx="2" fill="#e4e4e7"/>
+      <!-- Window shadow on wall -->
+      <rect x="20" y="444" width="200" height="8" fill="#0f172a" opacity="0.04" rx="2"/>
+
+      <!-- Spiderweb - top left corner of window -->
+      <g id="spiderweb-1" opacity="0.35">
+        <!-- Anchor lines from corner -->
+        <line x1="24" y1="174" x2="80" y2="174" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="24" y1="174" x2="24" y2="240" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="24" y1="174" x2="70" y2="220" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="24" y1="174" x2="55" y2="240" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="24" y1="174" x2="80" y2="210" stroke="#a8a29e" stroke-width="0.8"/>
+        <!-- Cross threads -->
+        <path d="M 34 174 Q 38 185 24 190" fill="none" stroke="#a8a29e" stroke-width="0.6"/>
+        <path d="M 50 174 Q 55 195 42 210 Q 30 218 24 220" fill="none" stroke="#a8a29e" stroke-width="0.6"/>
+        <path d="M 70 174 Q 72 200 58 222 Q 44 235 24 240" fill="none" stroke="#a8a29e" stroke-width="0.6"/>
+      </g>
+
+      <!-- Spiderweb - top right corner of window -->
+      <g id="spiderweb-2" opacity="0.28">
+        <!-- Anchor lines from corner -->
+        <line x1="216" y1="174" x2="160" y2="174" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="216" y1="174" x2="216" y2="230" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="216" y1="174" x2="170" y2="210" stroke="#a8a29e" stroke-width="0.8"/>
+        <line x1="216" y1="174" x2="180" y2="230" stroke="#a8a29e" stroke-width="0.8"/>
+        <!-- Cross threads -->
+        <path d="M 200 174 Q 205 185 216 188" fill="none" stroke="#a8a29e" stroke-width="0.6"/>
+        <path d="M 180 174 Q 185 195 196 208 Q 208 215 216 218" fill="none" stroke="#a8a29e" stroke-width="0.6"/>
+      </g>
+
+      <!-- Small dangling thread from sill -->
+      <path d="M 50 430 Q 48 450 52 460 Q 50 465 48 462" fill="none" stroke="#a8a29e" stroke-width="0.7" opacity="0.3"/>
+    </g>
+
+    <!-- === Snake crawling in through window === -->
+    <g id="snake-1">
+      <!-- Snake body - undulating curves animated -->
+      <path fill="none" stroke="#4a8c3f" stroke-width="7" stroke-linecap="round">
+        <animate attributeName="d" dur="3s" repeatCount="indefinite" calcMode="spline"
+          keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"
+          values="
+            M 55 395 Q 80 385 95 408 Q 115 430 130 438 Q 150 445 170 450 Q 195 460 200 485 Q 200 515 180 540 Q 162 560 158 580;
+            M 60 402 Q 72 388 98 400 Q 120 418 125 435 Q 140 448 165 445 Q 190 448 205 478 Q 208 510 185 535 Q 168 555 165 575;
+            M 50 398 Q 85 380 92 412 Q 108 432 132 440 Q 155 442 175 455 Q 198 468 195 492 Q 190 520 172 545 Q 158 562 155 582;
+            M 55 395 Q 80 385 95 408 Q 115 430 130 438 Q 150 445 170 450 Q 195 460 200 485 Q 200 515 180 540 Q 162 560 158 580
+          "/>
+      </path>
+      <!-- Body pattern overlay - same animation -->
+      <path fill="none" stroke="#6abf40" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12">
+        <animate attributeName="d" dur="3s" repeatCount="indefinite" calcMode="spline"
+          keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"
+          values="
+            M 55 395 Q 80 385 95 408 Q 115 430 130 438 Q 150 445 170 450 Q 195 460 200 485 Q 200 515 180 540 Q 162 560 158 580;
+            M 60 402 Q 72 388 98 400 Q 120 418 125 435 Q 140 448 165 445 Q 190 448 205 478 Q 208 510 185 535 Q 168 555 165 575;
+            M 50 398 Q 85 380 92 412 Q 108 432 132 440 Q 155 442 175 455 Q 198 468 195 492 Q 190 520 172 545 Q 158 562 155 582;
+            M 55 395 Q 80 385 95 408 Q 115 430 130 438 Q 150 445 170 450 Q 195 460 200 485 Q 200 515 180 540 Q 162 560 158 580
+          "/>
+      </path>
+      <!-- Belly underside -->
+      <path fill="none" stroke="#a3e635" stroke-width="2" stroke-linecap="round" opacity="0.35">
+        <animate attributeName="d" dur="3s" repeatCount="indefinite" calcMode="spline"
+          keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"
+          values="
+            M 55 395 Q 80 385 95 408 Q 115 430 130 438 Q 150 445 170 450 Q 195 460 200 485 Q 200 515 180 540 Q 162 560 158 580;
+            M 60 402 Q 72 388 98 400 Q 120 418 125 435 Q 140 448 165 445 Q 190 448 205 478 Q 208 510 185 535 Q 168 555 165 575;
+            M 50 398 Q 85 380 92 412 Q 108 432 132 440 Q 155 442 175 455 Q 198 468 195 492 Q 190 520 172 545 Q 158 562 155 582;
+            M 55 395 Q 80 385 95 408 Q 115 430 130 438 Q 150 445 170 450 Q 195 460 200 485 Q 200 515 180 540 Q 162 560 158 580
+          "/>
+      </path>
+
+      <!-- Snake head - follows end of body path -->
+      <g id="snake-1-head">
+        <!-- Head sways with body end point -->
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0;7,-5;-3,2;0,0" dur="3s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
+        <!-- Head shape -->
+        <ellipse cx="161" cy="588" rx="10" ry="7" fill="#4a8c3f" stroke="#3a7a30" stroke-width="1.5" transform="rotate(15,161,588)"/>
+        <!-- Head highlight -->
+        <ellipse cx="158" cy="585" rx="5" ry="3" fill="#6abf40" opacity="0.4" transform="rotate(15,158,585)"/>
+        <!-- Eyes -->
+        <circle cx="156" cy="584" r="3" fill="#fde68a" stroke="#3a7a30" stroke-width="0.8"/>
+        <circle cx="165" cy="586" r="3" fill="#fde68a" stroke="#3a7a30" stroke-width="0.8"/>
+        <!-- Slit pupils -->
+        <ellipse cx="156" cy="584" rx="1" ry="2.5" fill="#0f172a"/>
+        <ellipse cx="165" cy="586" rx="1" ry="2.5" fill="#0f172a"/>
+        <!-- Tongue - flicks in and out -->
+        <g>
+          <path d="M 164 593 L 170 598 L 168 596 L 173 601" fill="none" stroke="#ef4444" stroke-width="1" stroke-linecap="round"/>
+          <animate attributeName="opacity" values="1;1;0;0;1;1;0;0;1" dur="2s" repeatCount="indefinite"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- === Photo frame on the right wall - hill and sunset === -->
+    <g id="photo-frame-1">
+      <!-- Frame shadow on wall -->
+      <rect x="787" y="203" width="176" height="226" rx="4" fill="#0f172a" opacity="0.06"/>
+      <!-- Outer frame -->
+      <rect x="780" y="195" width="176" height="226" rx="4" fill="url(#frame-wood-grad)" stroke="#5c2810" stroke-width="2"/>
+      <!-- Inner frame bevel -->
+      <rect x="792" y="207" width="152" height="202" rx="2" fill="#5c2810"/>
+      <!-- Canvas/image area - beach background -->
+      <rect x="796" y="211" width="144" height="194" rx="1" fill="#7dd3fc"/>
+      <!-- Beach sky -->
+      <rect x="796" y="211" width="144" height="110" fill="#38bdf8"/>
+      <!-- Sun -->
+      <circle cx="910" cy="240" r="16" fill="#fde68a"/>
+      <circle cx="910" cy="240" r="22" fill="#fbbf24" opacity="0.15"/>
+      <!-- Beach sand -->
+      <rect x="796" y="340" width="144" height="65" fill="#fcd34d"/>
+      <rect x="796" y="335" width="144" height="12" fill="#fde68a" opacity="0.6"/>
+      <!-- Ocean -->
+      <rect x="796" y="315" width="144" height="25" fill="#0ea5e9" opacity="0.6"/>
+      <!-- Wave line -->
+      <path d="M 796 335 Q 820 330 844 335 Q 868 340 892 335 Q 916 330 940 335" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+
+      <!-- Female panda portrait -->
+      <!-- Panda body -->
+      <ellipse cx="868" cy="380" rx="28" ry="30" fill="#1e1e2e"/>
+      <!-- Belly -->
+      <ellipse cx="868" cy="385" rx="18" ry="20" fill="#f1f1e8"/>
+
+      <!-- Bikini top -->
+      <path d="M 850 368 Q 858 360 868 365 Q 878 360 886 368" fill="#f472b6" stroke="#e11d9e" stroke-width="1"/>
+      <!-- Bikini strap -->
+      <line x1="858" y1="362" x2="862" y2="355" stroke="#e11d9e" stroke-width="0.8"/>
+      <line x1="878" y1="362" x2="874" y2="355" stroke="#e11d9e" stroke-width="0.8"/>
+      <!-- Bikini bottom -->
+      <path d="M 856 395 Q 868 402 880 395" fill="#f472b6" stroke="#e11d9e" stroke-width="0.8"/>
+
+      <!-- Arms -->
+      <ellipse cx="842" cy="378" rx="8" ry="14" fill="#1e1e2e" transform="rotate(15,842,378)"/>
+      <ellipse cx="894" cy="378" rx="8" ry="14" fill="#1e1e2e" transform="rotate(-15,894,378)"/>
+
+      <!-- Head -->
+      <circle cx="868" cy="330" r="24" fill="#f0f0e6"/>
+      <!-- Ears -->
+      <circle cx="850" cy="312" r="8" fill="#1e1e2e"/>
+      <circle cx="886" cy="312" r="8" fill="#1e1e2e"/>
+      <!-- Eye patches -->
+      <ellipse cx="858" cy="328" rx="9" ry="7" fill="#1e1e2e" transform="rotate(-8,858,328)"/>
+      <ellipse cx="878" cy="328" rx="9" ry="7" fill="#1e1e2e" transform="rotate(8,878,328)"/>
+      <!-- Eyes -->
+      <circle cx="859" cy="328" r="4" fill="#ffffff"/>
+      <circle cx="877" cy="328" r="4" fill="#ffffff"/>
+      <circle cx="860" cy="329" r="2" fill="#0f172a"/>
+      <circle cx="878" cy="329" r="2" fill="#0f172a"/>
+      <!-- Eye shine -->
+      <circle cx="861" cy="327" r="1" fill="#ffffff" opacity="0.9"/>
+      <circle cx="879" cy="327" r="1" fill="#ffffff" opacity="0.9"/>
+      <!-- Blush -->
+      <circle cx="853" cy="335" r="4" fill="#f9a8d4" opacity="0.5"/>
+      <circle cx="883" cy="335" r="4" fill="#f9a8d4" opacity="0.5"/>
+      <!-- Nose -->
+      <ellipse cx="868" cy="334" rx="3" ry="2" fill="#4a4a4a"/>
+      <!-- Smile -->
+      <path d="M 863 337 Q 868 341 873 337" fill="none" stroke="#0f172a" stroke-width="0.8" stroke-linecap="round"/>
+      <!-- Bow on head -->
+      <polygon points="868,308 862,302 868,306 874,302" fill="#f472b6" stroke="#e11d9e" stroke-width="0.6"/>
+      <circle cx="868" cy="306" r="2" fill="#e11d9e"/>
+      <!-- Sunglasses pushed up on head -->
+      <path d="M 855 318 Q 868 315 881 318" fill="none" stroke="#0f172a" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="858" cy="319" rx="5" ry="3" fill="#0f172a" opacity="0.7"/>
+      <ellipse cx="878" cy="319" rx="5" ry="3" fill="#0f172a" opacity="0.7"/>
+
+      <!-- Frame highlight -->
+      <line x1="782" y1="197" x2="782" y2="419" stroke="#a8601a" stroke-width="1" opacity="0.4"/>
+      <line x1="782" y1="197" x2="954" y2="197" stroke="#a8601a" stroke-width="1" opacity="0.4"/>
+    </g>
+
+    <!-- === Small table near window with espresso machine === -->
+    <g id="table-1">
+      <!-- Table shadow -->
+      <ellipse cx="120" cy="680" rx="65" ry="8" fill="#0f172a" opacity="0.08"/>
+
+      <!-- Table legs -->
+      <rect x="68" y="600" width="8" height="80" rx="2" fill="#6b5040" stroke="#5a4030" stroke-width="1"/>
+      <rect x="164" y="600" width="8" height="80" rx="2" fill="#6b5040" stroke="#5a4030" stroke-width="1"/>
+      <!-- Leg crossbar -->
+      <rect x="74" y="640" width="94" height="5" rx="2" fill="#5a4030"/>
+
+      <!-- Table top -->
+      <rect x="55" y="590" width="130" height="14" rx="4" fill="#8b6848"/>
+      <!-- Table top highlight -->
+      <rect x="55" y="590" width="130" height="5" rx="3" fill="#a07858" opacity="0.6"/>
+      <!-- Table top edge -->
+      <rect x="55" y="601" width="130" height="3" rx="1" fill="#5a4030" opacity="0.4"/>
+
+      <!-- === Espresso machine === -->
+      <g id="espresso-machine-1">
+        <!-- Machine base -->
+        <rect x="85" y="555" width="70" height="35" rx="5" fill="#78716c"/>
+        <!-- Base highlight -->
+        <rect x="85" y="555" width="70" height="8" rx="5" fill="#a8a29e" opacity="0.5"/>
+        <!-- Base dark bottom -->
+        <rect x="85" y="582" width="70" height="8" rx="3" fill="#57534e"/>
+
+        <!-- Drip tray -->
+        <rect x="95" y="575" width="50" height="6" rx="2" fill="#44403c"/>
+        <!-- Drip tray grate lines -->
+        <line x1="100" y1="577" x2="140" y2="577" stroke="#57534e" stroke-width="0.8"/>
+        <line x1="100" y1="579" x2="140" y2="579" stroke="#57534e" stroke-width="0.8"/>
+
+        <!-- Machine body/boiler -->
+        <rect x="92" y="510" width="56" height="48" rx="6" fill="#a8a29e"/>
+        <!-- Body shading -->
+        <rect x="92" y="510" width="56" height="12" rx="6" fill="#d4d4d8" opacity="0.4"/>
+        <!-- Body dark bottom -->
+        <rect x="92" y="548" width="56" height="10" rx="4" fill="#78716c"/>
+
+        <!-- Top section -->
+        <rect x="96" y="495" width="48" height="18" rx="4" fill="#78716c"/>
+        <rect x="96" y="495" width="48" height="5" rx="4" fill="#a8a29e" opacity="0.4"/>
+
+        <!-- Cup warming tray on top -->
+        <rect x="100" y="490" width="40" height="8" rx="3" fill="#57534e"/>
+        <rect x="100" y="490" width="40" height="3" rx="2" fill="#6b6560" opacity="0.5"/>
+
+        <!-- Group head / portafilter -->
+        <rect x="108" y="555" width="24" height="8" rx="2" fill="#44403c"/>
+        <!-- Portafilter handle -->
+        <rect x="98" y="558" width="14" height="5" rx="2" fill="#1c1917"/>
+        <rect x="130" y="558" width="14" height="5" rx="2" fill="#1c1917"/>
+
+        <!-- Steam wand on the right -->
+        <rect x="148" y="530" width="4" height="35" rx="1" fill="#a8a29e"/>
+        <circle cx="150" cy="565" r="3" fill="#78716c"/>
+        <!-- Steam wand knob -->
+        <circle cx="152" cy="535" r="4" fill="#57534e" stroke="#44403c" stroke-width="1"/>
+
+        <!-- Buttons/dial -->
+        <circle cx="110" cy="530" r="4" fill="#44403c" stroke="#57534e" stroke-width="1"/>
+        <circle cx="110" cy="530" r="2" fill="#ef4444" opacity="0.8"/>
+        <circle cx="125" cy="530" r="4" fill="#44403c" stroke="#57534e" stroke-width="1"/>
+        <circle cx="125" cy="530" r="1.5" fill="#22c55e" opacity="0.7"/>
+
+        <!-- Pressure gauge -->
+        <circle cx="120" cy="505" r="6" fill="#f5f5f4" stroke="#78716c" stroke-width="1.5"/>
+        <line x1="120" y1="505" x2="123" y2="501" stroke="#ef4444" stroke-width="1" stroke-linecap="round"/>
+        <circle cx="120" cy="505" r="1" fill="#44403c"/>
+
+        <!-- Small espresso cup underneath -->
+        <rect x="111" y="569" width="18" height="12" rx="3" fill="#f5f5f4" stroke="#d4d4d8" stroke-width="1"/>
+        <!-- Cup handle -->
+        <path d="M 129 572 Q 135 575 129 579" fill="none" stroke="#d4d4d8" stroke-width="1.5"/>
+        <!-- Coffee in cup -->
+        <rect x="113" y="571" width="14" height="5" rx="2" fill="#78350f"/>
+        <!-- Coffee crema -->
+        <rect x="113" y="571" width="14" height="2" rx="1" fill="#a16207" opacity="0.7"/>
+
+        <!-- Steam wisps from cup -->
+        <path d="M 118 568 Q 116 560 119 554" fill="none" stroke="#d4d4d8" stroke-width="0.8" opacity="0.4">
+          <animate attributeName="opacity" values="0.4;0.15;0.4" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="d" values="M 118 568 Q 116 560 119 554;M 118 568 Q 120 558 117 550;M 118 568 Q 116 560 119 554" dur="3s" repeatCount="indefinite"/>
+        </path>
+        <path d="M 123 568 Q 125 558 122 552" fill="none" stroke="#d4d4d8" stroke-width="0.8" opacity="0.3">
+          <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="d" values="M 123 568 Q 125 558 122 552;M 123 568 Q 121 556 124 548;M 123 568 Q 125 558 122 552" dur="3.5s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="500" cy="840" rx="220" ry="25" fill="url(#shadow-grad)">
+    <animate attributeName="rx" values="220;230;220" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+  </ellipse>
+
+  <!-- Panda -->
+  <g id="panda-1">
+
+    <!-- Breathing: whole body has subtle vertical shift -->
+    <g id="panda-1-body-group">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+
+      <!-- Body -->
+      <g id="panda-1-body">
+        <!-- Main body (dark) -->
+        <ellipse cx="500" cy="600" rx="200" ry="220" fill="url(#body-grad)" stroke="#0a0a15" stroke-width="3">
+          <!-- Breathing: body expands/contracts -->
+          <animate attributeName="rx" values="200;210;200" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+          <animate attributeName="ry" values="220;215;220" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        </ellipse>
+        <!-- Body highlight -->
+        <ellipse cx="470" cy="530" rx="80" ry="60" fill="#ffffff" opacity="0.06"/>
+        <!-- Belly patch -->
+        <ellipse cx="500" cy="620" rx="120" ry="140" fill="url(#belly-grad)" stroke="none">
+          <!-- Belly breathes with body -->
+          <animate attributeName="rx" values="120;128;120" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+          <animate attributeName="ry" values="140;136;140" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        </ellipse>
+      </g>
+
+      <!-- Feet -->
+      <g id="panda-1-feet">
+        <!-- Left foot -->
+        <ellipse cx="380" cy="790" rx="70" ry="40" fill="url(#foot-grad)" stroke="#0a0a15" stroke-width="3"/>
+        <ellipse cx="380" cy="795" rx="45" ry="25" fill="url(#foot-pad-grad)"/>
+        <!-- Left toe pads -->
+        <circle cx="358" cy="782" r="8" fill="url(#foot-pad-grad)"/>
+        <circle cx="378" cy="778" r="9" fill="url(#foot-pad-grad)"/>
+        <circle cx="400" cy="782" r="8" fill="url(#foot-pad-grad)"/>
+        <!-- Right foot -->
+        <ellipse cx="620" cy="790" rx="70" ry="40" fill="url(#foot-grad)" stroke="#0a0a15" stroke-width="3"/>
+        <ellipse cx="620" cy="795" rx="45" ry="25" fill="url(#foot-pad-grad)"/>
+        <!-- Right toe pads -->
+        <circle cx="598" cy="782" r="8" fill="url(#foot-pad-grad)"/>
+        <circle cx="618" cy="778" r="9" fill="url(#foot-pad-grad)"/>
+        <circle cx="640" cy="782" r="8" fill="url(#foot-pad-grad)"/>
+      </g>
+
+      <!-- Arms -->
+      <g id="panda-1-arms">
+        <!-- Left arm - slight sway with breathing -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="15,320,620;12,320,620;15,320,620" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+          <ellipse cx="320" cy="620" rx="55" ry="100" fill="url(#arm-left-grad)" stroke="#0a0a15" stroke-width="3"/>
+        </g>
+        <!-- Right arm - slight sway with breathing -->
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-15,680,620;-12,680,620;-15,680,620" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+          <ellipse cx="680" cy="620" rx="55" ry="100" fill="url(#arm-right-grad)" stroke="#0a0a15" stroke-width="3"/>
+        </g>
+      </g>
+
+      <!-- Head -->
+      <g id="panda-1-head">
+        <!-- Ears -->
+        <g id="panda-1-left-ear">
+          <!-- Ear tilts slightly with breath -->
+          <animateTransform attributeName="transform" type="rotate" values="0,365,300;-3,365,300;0,365,300" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+          <circle cx="365" cy="300" r="55" fill="url(#ear-grad)" stroke="#0a0a15" stroke-width="3"/>
+          <circle cx="365" cy="300" r="30" fill="#1a1a2a" opacity="0.4"/>
+        </g>
+        <g id="panda-1-right-ear">
+          <animateTransform attributeName="transform" type="rotate" values="0,635,300;3,635,300;0,635,300" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+          <circle cx="635" cy="300" r="55" fill="url(#ear-grad)" stroke="#0a0a15" stroke-width="3"/>
+          <circle cx="635" cy="300" r="30" fill="#1a1a2a" opacity="0.4"/>
+        </g>
+
+        <!-- Main head -->
+        <circle cx="500" cy="380" r="140" fill="url(#head-grad)" stroke="#0a0a15" stroke-width="3"/>
+        <!-- Head highlight -->
+        <ellipse cx="470" cy="340" rx="60" ry="40" fill="#ffffff" opacity="0.3"/>
+
+        <!-- Birthday hat - sits on top of head, base at top of head (~y=260), tip goes up -->
+        <g id="panda-1-hat">
+          <!-- Hat cone -->
+          <polygon points="500,40 400,270 600,270" fill="url(#hat-grad)" stroke="#9d174d" stroke-width="3"/>
+          <!-- Hat stripe 1 -->
+          <polygon points="490,75 425,235 448,235" fill="url(#hat-stripe-grad)" opacity="0.7"/>
+          <!-- Hat stripe 2 -->
+          <polygon points="510,75 575,235 552,235" fill="url(#hat-stripe-grad)" opacity="0.7"/>
+          <!-- Hat polka dots -->
+          <circle cx="470" cy="200" r="10" fill="#fde68a" opacity="0.8"/>
+          <circle cx="530" cy="180" r="9" fill="#fde68a" opacity="0.8"/>
+          <circle cx="500" cy="235" r="10" fill="#fde68a" opacity="0.8"/>
+          <circle cx="445" cy="240" r="8" fill="#fde68a" opacity="0.7"/>
+          <circle cx="555" cy="235" r="8" fill="#fde68a" opacity="0.7"/>
+          <circle cx="500" cy="150" r="8" fill="#fde68a" opacity="0.8"/>
+          <circle cx="483" cy="120" r="6" fill="#fde68a" opacity="0.7"/>
+          <circle cx="517" cy="120" r="6" fill="#fde68a" opacity="0.7"/>
+          <!-- Hat brim - elastic band at base of hat -->
+          <ellipse cx="500" cy="270" rx="102" ry="14" fill="#38bdf8" stroke="#0ea5e9" stroke-width="2.5"/>
+          <!-- Hat brim highlight -->
+          <ellipse cx="482" cy="266" rx="45" ry="5" fill="#ffffff" opacity="0.25"/>
+          <!-- Pompom on top -->
+          <circle cx="500" cy="36" r="24" fill="url(#pompom-grad)" stroke="#d97706" stroke-width="2.5"/>
+          <!-- Pompom highlight -->
+          <circle cx="492" cy="28" r="7" fill="#ffffff" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- Face -->
+      <g id="panda-1-face">
+        <!-- Eye patches -->
+        <ellipse cx="430" cy="380" rx="55" ry="45" fill="url(#eye-patch-grad)" transform="rotate(-10, 430, 380)"/>
+        <ellipse cx="570" cy="380" rx="55" ry="45" fill="url(#eye-patch-grad)" transform="rotate(10, 570, 380)"/>
+
+        <!-- Left eye -->
+        <ellipse cx="435" cy="380" rx="28" ry="30" fill="url(#eye-white-grad)" stroke="#0a0a15" stroke-width="2"/>
+        <circle cx="440" cy="383" r="16" fill="#0f172a"/>
+        <circle cx="440" cy="383" r="10" fill="#3a2a1a"/>
+        <circle cx="442" cy="385" r="7" fill="#0f172a"/>
+        <circle cx="447" cy="375" r="6" fill="#ffffff" opacity="0.9"/>
+        <circle cx="435" cy="388" r="3" fill="#ffffff" opacity="0.5"/>
+
+        <!-- Right eye -->
+        <ellipse cx="565" cy="380" rx="28" ry="30" fill="url(#eye-white-grad)" stroke="#0a0a15" stroke-width="2"/>
+        <circle cx="560" cy="383" r="16" fill="#0f172a"/>
+        <circle cx="560" cy="383" r="10" fill="#3a2a1a"/>
+        <circle cx="558" cy="385" r="7" fill="#0f172a"/>
+        <circle cx="553" cy="375" r="6" fill="#ffffff" opacity="0.9"/>
+        <circle cx="565" cy="388" r="3" fill="#ffffff" opacity="0.5"/>
+
+        <!-- Blinking animation on both eyes -->
+        <ellipse cx="435" cy="380" rx="28" ry="30" fill="url(#eye-patch-grad)">
+          <animate attributeName="ry" values="0;0;0;0;30;0;0;0;0;0;0;0;0;0;0;0" dur="4s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="565" cy="380" rx="28" ry="30" fill="url(#eye-patch-grad)">
+          <animate attributeName="ry" values="0;0;0;0;30;0;0;0;0;0;0;0;0;0;0;0" dur="4s" repeatCount="indefinite"/>
+        </ellipse>
+
+        <!-- Cheek blush - pulses subtly with breathing -->
+        <circle cx="390" cy="430" r="35" fill="url(#blush-grad)">
+          <animate attributeName="r" values="35;38;35" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        </circle>
+        <circle cx="610" cy="430" r="35" fill="url(#blush-grad)">
+          <animate attributeName="r" values="35;38;35" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        </circle>
+
+        <!-- Nose -->
+        <ellipse cx="500" cy="420" rx="18" ry="12" fill="url(#nose-grad)" stroke="#0a0a15" stroke-width="2"/>
+        <ellipse cx="496" cy="417" rx="6" ry="4" fill="#ffffff" opacity="0.3"/>
+
+        <!-- Mouth - opens slightly when inhaling -->
+        <path d="M 488 432 Q 500 445 512 432" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round">
+          <animate attributeName="d" values="M 488 432 Q 500 445 512 432;M 488 434 Q 500 448 512 434;M 488 432 Q 500 445 512 432" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        </path>
+        <line x1="500" y1="430" x2="500" y2="440" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round">
+          <animate attributeName="y2" values="440;443;440" dur="3.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+        </line>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- Toy lion figure - on the floor to the left of panda -->
+  <g id="lion-1">
+    <!-- Shadow -->
+    <ellipse cx="175" cy="838" rx="55" ry="8" fill="url(#lion-shadow-grad)"/>
+
+    <!-- Tail -->
+    <path d="M 130 780 Q 105 760 110 740 Q 115 725 125 730" fill="none" stroke="#c8862a" stroke-width="5" stroke-linecap="round"/>
+    <!-- Tail tuft -->
+    <circle cx="125" cy="728" r="7" fill="#92400e"/>
+
+    <!-- Back legs -->
+    <rect x="145" y="805" width="16" height="30" rx="5" fill="url(#lion-body-grad)" stroke="#a06820" stroke-width="1.5"/>
+    <rect x="190" y="805" width="16" height="30" rx="5" fill="url(#lion-body-grad)" stroke="#a06820" stroke-width="1.5"/>
+    <!-- Paws -->
+    <ellipse cx="153" cy="835" rx="10" ry="5" fill="#d99a20" stroke="#a06820" stroke-width="1.5"/>
+    <ellipse cx="198" cy="835" rx="10" ry="5" fill="#d99a20" stroke="#a06820" stroke-width="1.5"/>
+
+    <!-- Body -->
+    <ellipse cx="175" cy="790" rx="48" ry="30" fill="url(#lion-body-grad)" stroke="#a06820" stroke-width="2"/>
+    <!-- Belly highlight -->
+    <ellipse cx="175" cy="798" rx="28" ry="14" fill="#fde68a" opacity="0.4"/>
+
+    <!-- Front legs -->
+    <rect x="155" y="805" width="16" height="30" rx="5" fill="url(#lion-body-grad)" stroke="#a06820" stroke-width="1.5"/>
+    <rect x="180" y="805" width="16" height="30" rx="5" fill="url(#lion-body-grad)" stroke="#a06820" stroke-width="1.5"/>
+    <!-- Front paws -->
+    <ellipse cx="163" cy="835" rx="10" ry="5" fill="#d99a20" stroke="#a06820" stroke-width="1.5"/>
+    <ellipse cx="188" cy="835" rx="10" ry="5" fill="#d99a20" stroke="#a06820" stroke-width="1.5"/>
+
+    <!-- Mane -->
+    <circle cx="210" cy="765" r="35" fill="url(#lion-mane-grad)"/>
+    <!-- Mane spikes -->
+    <circle cx="195" cy="738" r="10" fill="#b45309"/>
+    <circle cx="215" cy="735" r="11" fill="#b45309"/>
+    <circle cx="233" cy="742" r="10" fill="#b45309"/>
+    <circle cx="240" cy="758" r="9" fill="#b45309"/>
+    <circle cx="238" cy="778" r="10" fill="#b45309"/>
+    <circle cx="230" cy="792" r="9" fill="#b45309"/>
+    <circle cx="190" cy="792" r="9" fill="#b45309"/>
+    <circle cx="183" cy="778" r="9" fill="#b45309"/>
+    <circle cx="182" cy="750" r="9" fill="#b45309"/>
+
+    <!-- Head -->
+    <circle cx="210" cy="765" r="26" fill="url(#lion-head-grad)" stroke="#a06820" stroke-width="2"/>
+    <!-- Head highlight -->
+    <ellipse cx="204" cy="757" rx="10" ry="7" fill="#ffffff" opacity="0.25"/>
+
+    <!-- Face -->
+    <!-- Eyes -->
+    <circle cx="201" cy="760" r="5" fill="#ffffff" stroke="#0f172a" stroke-width="1.2"/>
+    <circle cx="219" cy="760" r="5" fill="#ffffff" stroke="#0f172a" stroke-width="1.2"/>
+    <!-- Pupils -->
+    <circle cx="202" cy="761" r="2.5" fill="#0f172a"/>
+    <circle cx="220" cy="761" r="2.5" fill="#0f172a"/>
+    <!-- Eye shine -->
+    <circle cx="204" cy="759" r="1.2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="222" cy="759" r="1.2" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Snout -->
+    <ellipse cx="210" cy="773" rx="10" ry="7" fill="#fde68a"/>
+    <!-- Nose -->
+    <ellipse cx="210" cy="770" rx="4" ry="3" fill="#92400e" stroke="#7c2d12" stroke-width="1"/>
+    <!-- Nose highlight -->
+    <circle cx="209" cy="769" r="1.2" fill="#ffffff" opacity="0.35"/>
+    <!-- Mouth -->
+    <path d="M 206 774 Q 210 778 214 774" fill="none" stroke="#92400e" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Inner ears -->
+    <circle cx="196" cy="745" r="6" fill="#f9a8d4" opacity="0.5"/>
+    <circle cx="224" cy="745" r="6" fill="#f9a8d4" opacity="0.5"/>
+  </g>
+
+  <!-- Bamboo bucket - placed to the right of panda -->
+  <g id="bamboo-bucket-1">
+    <!-- Bucket shadow -->
+    <ellipse cx="820" cy="830" rx="70" ry="12" fill="url(#bucket-shadow-grad)"/>
+
+    <!-- Bucket body - tapered trapezoid -->
+    <polygon points="775,700 865,700 850,825 790,825" fill="url(#bucket-grad)" stroke="#6B4F10" stroke-width="3"/>
+    <!-- Bucket highlight stripe -->
+    <polygon points="808,700 822,700 817,825 803,825" fill="#ffffff" opacity="0.1"/>
+    <!-- Bucket dark band -->
+    <rect x="780" y="740" width="80" height="8" rx="2" fill="#6B4F10" opacity="0.4"/>
+    <rect x="784" y="785" width="73" height="8" rx="2" fill="#6B4F10" opacity="0.4"/>
+    <!-- Bucket rim -->
+    <ellipse cx="820" cy="700" rx="46" ry="12" fill="url(#bucket-rim-grad)" stroke="#777" stroke-width="2"/>
+    <!-- Bucket interior -->
+    <ellipse cx="820" cy="700" rx="38" ry="8" fill="#5a4210"/>
+
+    <!-- Bamboo stalks sticking out -->
+    <!-- Stalk 1 - tallest, left -->
+    <rect x="800" y="520" width="12" height="185" rx="4" fill="url(#bamboo-grad)" stroke="#3a7a20" stroke-width="1.5"/>
+    <!-- Stalk 1 segments -->
+    <line x1="800" y1="570" x2="812" y2="570" stroke="#4a7a30" stroke-width="2"/>
+    <line x1="800" y1="620" x2="812" y2="620" stroke="#4a7a30" stroke-width="2"/>
+    <line x1="800" y1="665" x2="812" y2="665" stroke="#4a7a30" stroke-width="2"/>
+    <!-- Stalk 1 leaves -->
+    <path d="M 812 550 Q 840 535 855 545" fill="url(#bamboo-leaf-grad)" stroke="none"/>
+    <path d="M 812 548 Q 840 560 850 550" fill="url(#bamboo-leaf-grad)" stroke="none" opacity="0.8"/>
+    <path d="M 800 580 Q 775 565 762 575" fill="url(#bamboo-leaf-grad)" stroke="none"/>
+
+    <!-- Stalk 2 - medium, right -->
+    <rect x="826" y="560" width="11" height="145" rx="4" fill="url(#bamboo-grad)" stroke="#3a7a20" stroke-width="1.5"/>
+    <!-- Stalk 2 segments -->
+    <line x1="826" y1="600" x2="837" y2="600" stroke="#4a7a30" stroke-width="2"/>
+    <line x1="826" y1="645" x2="837" y2="645" stroke="#4a7a30" stroke-width="2"/>
+    <!-- Stalk 2 leaves -->
+    <path d="M 837 575 Q 860 560 872 572" fill="url(#bamboo-leaf-grad)" stroke="none"/>
+    <path d="M 826 610 Q 800 598 790 608" fill="url(#bamboo-leaf-grad)" stroke="none" opacity="0.8"/>
+
+    <!-- Stalk 3 - short, center -->
+    <rect x="813" y="600" width="10" height="105" rx="4" fill="url(#bamboo-grad)" stroke="#3a7a20" stroke-width="1.5" opacity="0.85"/>
+    <!-- Stalk 3 segment -->
+    <line x1="813" y1="645" x2="823" y2="645" stroke="#4a7a30" stroke-width="2" opacity="0.85"/>
+    <!-- Stalk 3 leaf -->
+    <path d="M 823 618 Q 845 608 853 618" fill="url(#bamboo-leaf-grad)" stroke="none" opacity="0.7"/>
+  </g>
+
+  <!-- Real lion - far left, facing right toward toy lion -->
+  <g id="lion-2">
+    <!-- Shadow -->
+    <ellipse cx="80" cy="845" rx="90" ry="14" fill="url(#real-lion-shadow-grad)"/>
+
+    <!-- Tail - extends off left edge -->
+    <path d="M -15 720 Q -35 690 -20 665 Q -10 650 0 660" fill="none" stroke="#c89030" stroke-width="7" stroke-linecap="round"/>
+    <!-- Tail tuft -->
+    <circle cx="0" cy="658" r="11" fill="#7c3a0e"/>
+
+    <!-- Hind legs (left side) -->
+    <rect x="5" y="795" width="28" height="45" rx="9" fill="url(#real-lion-body-grad)" stroke="#8a6018" stroke-width="2"/>
+    <rect x="35" y="790" width="28" height="50" rx="9" fill="url(#real-lion-body-grad)" stroke="#8a6018" stroke-width="2"/>
+    <!-- Hind paws -->
+    <ellipse cx="19" cy="840" rx="16" ry="7" fill="#c89030" stroke="#8a6018" stroke-width="2"/>
+    <ellipse cx="49" cy="840" rx="16" ry="7" fill="#c89030" stroke="#8a6018" stroke-width="2"/>
+
+    <!-- Body -->
+    <ellipse cx="65" cy="765" rx="80" ry="48" fill="url(#real-lion-body-grad)" stroke="#8a6018" stroke-width="2.5"/>
+    <!-- Belly highlight -->
+    <ellipse cx="65" cy="778" rx="45" ry="20" fill="#fde68a" opacity="0.25"/>
+
+    <!-- Front legs - toward toy lion -->
+    <rect x="95" y="790" width="28" height="50" rx="9" fill="url(#real-lion-body-grad)" stroke="#8a6018" stroke-width="2"/>
+    <rect x="115" y="795" width="26" height="45" rx="8" fill="url(#real-lion-body-grad)" stroke="#8a6018" stroke-width="2"/>
+    <!-- Front paws -->
+    <ellipse cx="109" cy="840" rx="16" ry="7" fill="#c89030" stroke="#8a6018" stroke-width="2"/>
+    <ellipse cx="128" cy="840" rx="14" ry="6" fill="#c89030" stroke="#8a6018" stroke-width="2"/>
+
+    <!-- Mane -->
+    <circle cx="118" cy="718" r="50" fill="url(#real-lion-mane-grad)"/>
+    <!-- Mane tufts -->
+    <circle cx="90" cy="680" r="15" fill="#92400e"/>
+    <circle cx="112" cy="672" r="16" fill="#92400e"/>
+    <circle cx="136" cy="674" r="15" fill="#92400e"/>
+    <circle cx="155" cy="685" r="14" fill="#92400e"/>
+    <circle cx="162" cy="705" r="14" fill="#92400e"/>
+    <circle cx="160" cy="728" r="15" fill="#92400e"/>
+    <circle cx="152" cy="748" r="14" fill="#92400e"/>
+    <circle cx="138" cy="760" r="13" fill="#92400e"/>
+    <circle cx="98" cy="758" r="13" fill="#92400e"/>
+    <circle cx="82" cy="745" r="14" fill="#92400e"/>
+    <circle cx="76" cy="725" r="15" fill="#92400e"/>
+    <circle cx="78" cy="700" r="14" fill="#92400e"/>
+
+    <!-- Head -->
+    <circle cx="118" cy="718" r="36" fill="url(#real-lion-head-grad)" stroke="#8a6018" stroke-width="2.5"/>
+    <!-- Head highlight -->
+    <ellipse cx="110" cy="707" rx="15" ry="10" fill="#ffffff" opacity="0.2"/>
+
+    <!-- Face - looking RIGHT at toy lion -->
+    <!-- Eyes -->
+    <ellipse cx="108" cy="712" rx="8" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <ellipse cx="130" cy="712" rx="8" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+    <!-- Irises - shifted right -->
+    <ellipse cx="111" cy="713" rx="5" ry="6" fill="url(#real-lion-eye-grad)"/>
+    <ellipse cx="133" cy="713" rx="5" ry="6" fill="url(#real-lion-eye-grad)"/>
+    <!-- Pupils - shifted right -->
+    <circle cx="113" cy="714" r="3" fill="#0f172a"/>
+    <circle cx="135" cy="714" r="3" fill="#0f172a"/>
+    <!-- Eye shine -->
+    <circle cx="114" cy="710" r="2.2" fill="#ffffff" opacity="0.9"/>
+    <circle cx="136" cy="710" r="2.2" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Snout -->
+    <ellipse cx="122" cy="730" rx="15" ry="11" fill="#fde68a"/>
+    <!-- Nose -->
+    <ellipse cx="122" cy="727" rx="6" ry="4" fill="#7c3a0e" stroke="#5c2a0a" stroke-width="1.5"/>
+    <!-- Nose highlight -->
+    <circle cx="120" cy="725" r="1.8" fill="#ffffff" opacity="0.3"/>
+    <!-- Mouth -->
+    <path d="M 116 732 Q 122 738 128 732" fill="none" stroke="#7c3a0e" stroke-width="2" stroke-linecap="round"/>
+    <line x1="122" y1="730" x2="122" y2="735" stroke="#7c3a0e" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Ears -->
+    <circle cx="100" cy="690" r="10" fill="#d4a030" stroke="#8a6018" stroke-width="1.5"/>
+    <circle cx="138" cy="690" r="10" fill="#d4a030" stroke="#8a6018" stroke-width="1.5"/>
+    <!-- Inner ears -->
+    <circle cx="100" cy="690" r="5" fill="#f9a8d4" opacity="0.4"/>
+    <circle cx="138" cy="690" r="5" fill="#f9a8d4" opacity="0.4"/>
+  </g>
+</svg>

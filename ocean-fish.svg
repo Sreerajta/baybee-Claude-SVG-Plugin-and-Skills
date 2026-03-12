@@ -1,0 +1,219 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="background">
+    <!-- Deep ocean layers -->
+    <rect x="0" y="0" width="1000" height="250" fill="#0c4a6e" />
+    <rect x="0" y="250" width="1000" height="250" fill="#0a3d5c" />
+    <rect x="0" y="500" width="1000" height="250" fill="#082f49" />
+    <rect x="0" y="750" width="1000" height="250" fill="#062033" />
+    <!-- Light rays -->
+    <polygon points="200,0 260,0 380,350 320,350" fill="#38bdf8" opacity="0.05" />
+    <polygon points="450,0 520,0 590,300 520,300" fill="#38bdf8" opacity="0.06" />
+    <polygon points="700,0 750,0 810,280 760,280" fill="#38bdf8" opacity="0.04" />
+    <!-- Surface shimmer -->
+    <ellipse cx="200" cy="18" rx="140" ry="6" fill="#7dd3fc" opacity="0.12" />
+    <ellipse cx="550" cy="12" rx="170" ry="5" fill="#7dd3fc" opacity="0.1" />
+    <ellipse cx="850" cy="22" rx="120" ry="5" fill="#7dd3fc" opacity="0.08" />
+  </g>
+  <g id="environment">
+    <!-- Seaweed cluster left -->
+    <path d="M 60,1000 Q 50,900 70,800 Q 90,720 65,640" fill="none" stroke="#166534" stroke-width="7" stroke-linecap="round" opacity="0.7">
+      <animate attributeName="d" values="M 60,1000 Q 50,900 70,800 Q 90,720 65,640;M 60,1000 Q 75,900 58,800 Q 40,720 70,640;M 60,1000 Q 50,900 70,800 Q 90,720 65,640" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M 100,1000 Q 90,920 110,850 Q 125,790 105,720" fill="none" stroke="#15803d" stroke-width="6" stroke-linecap="round" opacity="0.6">
+      <animate attributeName="d" values="M 100,1000 Q 90,920 110,850 Q 125,790 105,720;M 100,1000 Q 115,920 98,850 Q 80,790 112,720;M 100,1000 Q 90,920 110,850 Q 125,790 105,720" dur="4.7s" repeatCount="indefinite" />
+    </path>
+    <!-- Seaweed cluster right -->
+    <path d="M 900,1000 Q 890,880 910,790 Q 930,710 905,640" fill="none" stroke="#166534" stroke-width="8" stroke-linecap="round" opacity="0.7">
+      <animate attributeName="d" values="M 900,1000 Q 890,880 910,790 Q 930,710 905,640;M 900,1000 Q 915,880 895,790 Q 875,710 910,640;M 900,1000 Q 890,880 910,790 Q 930,710 905,640" dur="5s" repeatCount="indefinite" />
+    </path>
+    <path d="M 940,1000 Q 935,910 950,830 Q 960,770 942,700" fill="none" stroke="#15803d" stroke-width="5" stroke-linecap="round" opacity="0.55">
+      <animate attributeName="d" values="M 940,1000 Q 935,910 950,830 Q 960,770 942,700;M 940,1000 Q 950,910 938,830 Q 920,770 948,700;M 940,1000 Q 935,910 950,830 Q 960,770 942,700" dur="4.3s" repeatCount="indefinite" />
+    </path>
+    <!-- Seaweed center back -->
+    <path d="M 480,1000 Q 470,930 490,870 Q 505,820 485,760" fill="none" stroke="#166534" stroke-width="5" stroke-linecap="round" opacity="0.4">
+      <animate attributeName="d" values="M 480,1000 Q 470,930 490,870 Q 505,820 485,760;M 480,1000 Q 495,930 478,870 Q 460,820 492,760;M 480,1000 Q 470,930 490,870 Q 505,820 485,760" dur="5.2s" repeatCount="indefinite" />
+    </path>
+    <!-- Coral left -->
+    <ellipse cx="150" cy="940" rx="60" ry="35" fill="#f87171" stroke="#0f172a" stroke-width="3" opacity="0.6" />
+    <ellipse cx="130" cy="920" rx="25" ry="20" fill="#fb923c" stroke="#0f172a" stroke-width="2" opacity="0.5" />
+    <ellipse cx="175" cy="925" rx="20" ry="18" fill="#f472b6" stroke="#0f172a" stroke-width="2" opacity="0.5" />
+    <!-- Coral right -->
+    <ellipse cx="820" cy="945" rx="55" ry="30" fill="#fb923c" stroke="#0f172a" stroke-width="3" opacity="0.6" />
+    <ellipse cx="800" cy="928" rx="22" ry="18" fill="#f87171" stroke="#0f172a" stroke-width="2" opacity="0.5" />
+    <ellipse cx="845" cy="930" rx="18" ry="16" fill="#f472b6" stroke="#0f172a" stroke-width="2" opacity="0.5" />
+    <!-- Sandy floor -->
+    <ellipse cx="500" cy="985" rx="500" ry="30" fill="#a3845b" opacity="0.25" />
+    <!-- Rocks -->
+    <ellipse cx="300" cy="975" rx="30" ry="14" fill="#334155" opacity="0.35" />
+    <ellipse cx="650" cy="980" rx="22" ry="10" fill="#334155" opacity="0.3" />
+  </g>
+  <g id="characters">
+    <!-- === FISH 1: Large blue, center-left, facing right === -->
+    <g id="fish-1">
+      <g id="fish-1-tail">
+        <polygon points="220,320 175,280 175,360" fill="#38bdf8" stroke="#0f172a" stroke-width="4" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-14 220 320;14 220 320;-14 220 320" dur="0.7s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="300" cy="320" rx="95" ry="50" fill="#38bdf8" stroke="#0f172a" stroke-width="4" />
+      <ellipse cx="310" cy="340" rx="55" ry="22" fill="#f1f5f9" opacity="0.3" />
+      <path d="M 290,275 Q 305,250 325,268" fill="#334155" stroke="#0f172a" stroke-width="3" />
+      <circle cx="360" cy="310" r="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="3" />
+      <circle cx="363" cy="312" r="5" fill="#0f172a" />
+      <path d="M 390,325 Q 396,330 390,335" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;15 -4;0 0;-10 4;0 0" dur="3.2s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 2: Orange, upper-right, facing left === -->
+    <g id="fish-2">
+      <g id="fish-2-tail">
+        <polygon points="720,180 765,145 765,215" fill="#fb923c" stroke="#0f172a" stroke-width="3" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-12 720 180;12 720 180;-12 720 180" dur="0.6s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="660" cy="180" rx="72" ry="40" fill="#fb923c" stroke="#0f172a" stroke-width="4" />
+      <ellipse cx="650" cy="195" rx="42" ry="16" fill="#fbbf24" opacity="0.4" />
+      <path d="M 668,145 Q 655,128 640,142" fill="#dc2626" stroke="#0f172a" stroke-width="3" />
+      <circle cx="615" cy="172" r="9" fill="#f1f5f9" stroke="#0f172a" stroke-width="3" />
+      <circle cx="612" cy="174" r="5" fill="#0f172a" />
+      <path d="M 590,185 Q 584,190 590,195" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;-18 3;0 0;12 -5;0 0" dur="3.8s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 3: Small cyan, top-center === -->
+    <g id="fish-3">
+      <g id="fish-3-tail">
+        <polygon points="440,120 418,100 418,140" fill="#22d3ee" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-15 440 120;15 440 120;-15 440 120" dur="0.55s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="475" cy="120" rx="45" ry="24" fill="#22d3ee" stroke="#0f172a" stroke-width="3" />
+      <circle cx="500" cy="115" r="6" fill="#f1f5f9" stroke="#0f172a" stroke-width="2" />
+      <circle cx="502" cy="116" r="3" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;12 -3;0 0;-8 5;0 0" dur="2.8s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 4: Pink, mid-right === -->
+    <g id="fish-4">
+      <g id="fish-4-tail">
+        <polygon points="760,450 800,420 800,480" fill="#f472b6" stroke="#0f172a" stroke-width="3" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-13 760 450;13 760 450;-13 760 450" dur="0.65s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="700" cy="450" rx="68" ry="38" fill="#f472b6" stroke="#0f172a" stroke-width="4" />
+      <ellipse cx="690" cy="462" rx="38" ry="15" fill="#f1f5f9" opacity="0.3" />
+      <path d="M 710,418 Q 700,402 685,415" fill="#dc2626" stroke="#0f172a" stroke-width="2" />
+      <circle cx="652" cy="442" r="8" fill="#f1f5f9" stroke="#0f172a" stroke-width="2" />
+      <circle cx="650" cy="444" r="4" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;-14 6;0 0;10 -3;0 0" dur="3.5s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 5: Green, lower-left === -->
+    <g id="fish-5">
+      <g id="fish-5-tail">
+        <polygon points="250,620 210,595 210,645" fill="#4ade80" stroke="#0f172a" stroke-width="3" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-11 250 620;11 250 620;-11 250 620" dur="0.72s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="315" cy="620" rx="75" ry="38" fill="#4ade80" stroke="#0f172a" stroke-width="4" />
+      <ellipse cx="325" cy="632" rx="42" ry="15" fill="#f1f5f9" opacity="0.3" />
+      <path d="M 305,586 Q 318,572 330,585" fill="#166534" stroke="#0f172a" stroke-width="2" />
+      <circle cx="365" cy="612" r="8" fill="#f1f5f9" stroke="#0f172a" stroke-width="2" />
+      <circle cx="367" cy="614" r="4" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;16 -5;0 0;-12 3;0 0" dur="3s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 6: Small yellow, mid-left === -->
+    <g id="fish-6">
+      <g id="fish-6-tail">
+        <polygon points="155,490 130,472 130,508" fill="#fbbf24" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-16 155 490;16 155 490;-16 155 490" dur="0.5s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="190" cy="490" rx="42" ry="22" fill="#fbbf24" stroke="#0f172a" stroke-width="3" />
+      <circle cx="213" cy="485" r="5" fill="#f1f5f9" stroke="#0f172a" stroke-width="2" />
+      <circle cx="214" cy="486" r="2.5" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;10 -6;0 0;-8 4;0 0" dur="2.6s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 7: Small purple, lower-right === -->
+    <g id="fish-7">
+      <g id="fish-7-tail">
+        <polygon points="680,720 715,700 715,740" fill="#a78bfa" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-14 680 720;14 680 720;-14 680 720" dur="0.58s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="630" cy="720" rx="55" ry="28" fill="#a78bfa" stroke="#0f172a" stroke-width="3" />
+      <ellipse cx="622" cy="730" rx="30" ry="10" fill="#f1f5f9" opacity="0.3" />
+      <circle cx="595" cy="714" r="6" fill="#f1f5f9" stroke="#0f172a" stroke-width="2" />
+      <circle cx="593" cy="715" r="3" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;-15 4;0 0;10 -6;0 0" dur="3.4s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 8: Tiny red, deep lower-center === -->
+    <g id="fish-8">
+      <g id="fish-8-tail">
+        <polygon points="530,830 550,818 550,842" fill="#f87171" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-12 530 830;12 530 830;-12 530 830" dur="0.62s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="500" cy="830" rx="35" ry="18" fill="#f87171" stroke="#0f172a" stroke-width="2" />
+      <circle cx="480" cy="826" r="4" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5" />
+      <circle cx="479" cy="827" r="2" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;-10 3;0 0;8 -4;0 0" dur="2.9s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 9: Tiny white, upper area === -->
+    <g id="fish-9">
+      <g id="fish-9-tail">
+        <polygon points="845,260 868,248 868,272" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-13 845 260;13 845 260;-13 845 260" dur="0.52s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="815" cy="260" rx="38" ry="18" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" />
+      <circle cx="795" cy="256" r="4" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5" />
+      <circle cx="794" cy="257" r="2" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;-12 -3;0 0;8 5;0 0" dur="3.1s" repeatCount="indefinite" />
+    </g>
+
+    <!-- === FISH 10: Small teal, mid-center === -->
+    <g id="fish-10">
+      <g id="fish-10-tail">
+        <polygon points="410,540 385,522 385,558" fill="#2dd4bf" stroke="#0f172a" stroke-width="2" stroke-linejoin="round" />
+        <animateTransform attributeName="transform" type="rotate" values="-15 410 540;15 410 540;-15 410 540" dur="0.6s" repeatCount="indefinite" />
+      </g>
+      <ellipse cx="450" cy="540" rx="48" ry="24" fill="#2dd4bf" stroke="#0f172a" stroke-width="3" />
+      <circle cx="475" cy="535" r="5" fill="#f1f5f9" stroke="#0f172a" stroke-width="2" />
+      <circle cx="476" cy="536" r="2.5" fill="#0f172a" />
+      <animateTransform attributeName="transform" type="translate" values="0 0;14 -4;0 0;-10 6;0 0" dur="2.7s" repeatCount="indefinite" />
+    </g>
+  </g>
+  <g id="foreground">
+    <!-- Bubbles rising -->
+    <circle cx="320" cy="280" r="5" fill="none" stroke="#f1f5f9" stroke-width="1.5" opacity="0.4">
+      <animate attributeName="cy" values="280;200;120" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4;0.2;0" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="550" cy="400" r="4" fill="none" stroke="#f1f5f9" stroke-width="1.5" opacity="0.35">
+      <animate attributeName="cy" values="400;300;200" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.35;0.18;0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="500" r="6" fill="none" stroke="#f1f5f9" stroke-width="1.5" opacity="0.4">
+      <animate attributeName="cy" values="500;380;260" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4;0.2;0" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="180" cy="600" r="3" fill="none" stroke="#f1f5f9" stroke-width="1" opacity="0.3">
+      <animate attributeName="cy" values="600;490;380" dur="5.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.15;0" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="830" cy="700" r="4" fill="none" stroke="#f1f5f9" stroke-width="1.5" opacity="0.35">
+      <animate attributeName="cy" values="700;570;440" dur="4.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.35;0.15;0" dur="4.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="450" cy="750" r="5" fill="none" stroke="#f1f5f9" stroke-width="1.5" opacity="0.3">
+      <animate attributeName="cy" values="750;620;490" dur="5.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.15;0" dur="5.2s" repeatCount="indefinite" />
+    </circle>
+    <!-- Floating particles -->
+    <circle cx="250" cy="150" r="1.5" fill="#f1f5f9" opacity="0.1">
+      <animate attributeName="cy" values="150;135;150" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="650" r="1.5" fill="#f1f5f9" opacity="0.08">
+      <animate attributeName="cy" values="650;635;650" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="850" r="1" fill="#f1f5f9" opacity="0.07">
+      <animate attributeName="cy" values="850;838;850" dur="8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

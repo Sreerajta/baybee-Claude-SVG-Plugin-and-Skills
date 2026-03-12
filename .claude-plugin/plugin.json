@@ -1,0 +1,9 @@
+{
+  "name": "baybee",
+  "description": "SVG drawing and animation plugin for Claude Code. Create, edit, and animate SVGs with natural language.",
+  "version": "0.3.0",
+  "author": {
+    "name": "sreerajta"
+  },
+  "keywords": ["svg", "drawing", "animation", "graphics", "vector"]
+}

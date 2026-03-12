@@ -1,0 +1,175 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </radialGradient>
+    <!-- Body shading -->
+    <radialGradient id="body-grad" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <!-- Head shading -->
+    <radialGradient id="head-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+    <!-- Belly shading -->
+    <radialGradient id="belly-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#faf5ef"/>
+      <stop offset="100%" stop-color="#e8ddd0"/>
+    </radialGradient>
+    <!-- Eye patch shading -->
+    <radialGradient id="eye-patch-grad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <!-- Eye white -->
+    <radialGradient id="eye-white-grad" cx="45%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </radialGradient>
+    <!-- Ear shading -->
+    <radialGradient id="ear-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <!-- Cheek blush -->
+    <radialGradient id="blush-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f9a8d4" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Nose shading -->
+    <radialGradient id="nose-grad" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </radialGradient>
+    <!-- Arm shading left -->
+    <radialGradient id="arm-left-grad" cx="55%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <!-- Arm shading right -->
+    <radialGradient id="arm-right-grad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <!-- Foot shading -->
+    <radialGradient id="foot-grad" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </radialGradient>
+    <!-- Foot pad -->
+    <radialGradient id="foot-pad-grad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#4a4a5a"/>
+      <stop offset="100%" stop-color="#2a2a3a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <g id="background">
+    <rect x="0" y="0" width="1000" height="1000" fill="url(#bg-grad)"/>
+  </g>
+
+  <!-- Panda -->
+  <g id="panda-1">
+
+    <!-- Body -->
+    <g id="panda-1-body">
+      <!-- Main body (dark) -->
+      <ellipse cx="500" cy="600" rx="200" ry="220" fill="url(#body-grad)" stroke="#0a0a15" stroke-width="3"/>
+      <!-- Body highlight -->
+      <ellipse cx="470" cy="530" rx="80" ry="60" fill="#ffffff" opacity="0.06"/>
+      <!-- Belly patch -->
+      <ellipse cx="500" cy="620" rx="120" ry="140" fill="url(#belly-grad)" stroke="none"/>
+    </g>
+
+    <!-- Feet -->
+    <g id="panda-1-feet">
+      <!-- Left foot -->
+      <ellipse cx="380" cy="790" rx="70" ry="40" fill="url(#foot-grad)" stroke="#0a0a15" stroke-width="3"/>
+      <!-- Left foot pad -->
+      <ellipse cx="380" cy="795" rx="45" ry="25" fill="url(#foot-pad-grad)"/>
+      <!-- Right foot -->
+      <ellipse cx="620" cy="790" rx="70" ry="40" fill="url(#foot-grad)" stroke="#0a0a15" stroke-width="3"/>
+      <!-- Right foot pad -->
+      <ellipse cx="620" cy="795" rx="45" ry="25" fill="url(#foot-pad-grad)"/>
+    </g>
+
+    <!-- Arms -->
+    <g id="panda-1-arms">
+      <!-- Left arm -->
+      <ellipse cx="320" cy="620" rx="55" ry="100" fill="url(#arm-left-grad)" stroke="#0a0a15" stroke-width="3" transform="rotate(15, 320, 620)"/>
+      <!-- Right arm -->
+      <ellipse cx="680" cy="620" rx="55" ry="100" fill="url(#arm-right-grad)" stroke="#0a0a15" stroke-width="3" transform="rotate(-15, 680, 620)"/>
+    </g>
+
+    <!-- Head -->
+    <g id="panda-1-head">
+      <!-- Ears -->
+      <g id="panda-1-left-ear">
+        <circle cx="365" cy="300" r="55" fill="url(#ear-grad)" stroke="#0a0a15" stroke-width="3"/>
+        <!-- Inner ear -->
+        <circle cx="365" cy="300" r="30" fill="#1a1a2a" opacity="0.4"/>
+      </g>
+      <g id="panda-1-right-ear">
+        <circle cx="635" cy="300" r="55" fill="url(#ear-grad)" stroke="#0a0a15" stroke-width="3"/>
+        <!-- Inner ear -->
+        <circle cx="635" cy="300" r="30" fill="#1a1a2a" opacity="0.4"/>
+      </g>
+
+      <!-- Main head -->
+      <circle cx="500" cy="380" r="140" fill="url(#head-grad)" stroke="#0a0a15" stroke-width="3"/>
+      <!-- Head highlight -->
+      <ellipse cx="470" cy="340" rx="60" ry="40" fill="#ffffff" opacity="0.3"/>
+    </g>
+
+    <!-- Face -->
+    <g id="panda-1-face">
+      <!-- Eye patches -->
+      <ellipse cx="430" cy="380" rx="55" ry="45" fill="url(#eye-patch-grad)" transform="rotate(-10, 430, 380)"/>
+      <ellipse cx="570" cy="380" rx="55" ry="45" fill="url(#eye-patch-grad)" transform="rotate(10, 570, 380)"/>
+
+      <!-- Eyes -->
+      <!-- Left eye -->
+      <ellipse cx="435" cy="380" rx="28" ry="30" fill="url(#eye-white-grad)" stroke="#0a0a15" stroke-width="2"/>
+      <!-- Left pupil -->
+      <circle cx="440" cy="383" r="16" fill="#0f172a"/>
+      <!-- Left iris detail -->
+      <circle cx="440" cy="383" r="10" fill="#3a2a1a"/>
+      <!-- Left pupil center -->
+      <circle cx="442" cy="385" r="7" fill="#0f172a"/>
+      <!-- Left eye shine -->
+      <circle cx="447" cy="375" r="6" fill="#ffffff" opacity="0.9"/>
+      <circle cx="435" cy="388" r="3" fill="#ffffff" opacity="0.5"/>
+
+      <!-- Right eye -->
+      <ellipse cx="565" cy="380" rx="28" ry="30" fill="url(#eye-white-grad)" stroke="#0a0a15" stroke-width="2"/>
+      <!-- Right pupil -->
+      <circle cx="560" cy="383" r="16" fill="#0f172a"/>
+      <!-- Right iris detail -->
+      <circle cx="560" cy="383" r="10" fill="#3a2a1a"/>
+      <!-- Right pupil center -->
+      <circle cx="558" cy="385" r="7" fill="#0f172a"/>
+      <!-- Right eye shine -->
+      <circle cx="553" cy="375" r="6" fill="#ffffff" opacity="0.9"/>
+      <circle cx="565" cy="388" r="3" fill="#ffffff" opacity="0.5"/>
+
+      <!-- Cheek blush -->
+      <circle cx="390" cy="430" r="35" fill="url(#blush-grad)"/>
+      <circle cx="610" cy="430" r="35" fill="url(#blush-grad)"/>
+
+      <!-- Nose -->
+      <ellipse cx="500" cy="420" rx="18" ry="12" fill="url(#nose-grad)" stroke="#0a0a15" stroke-width="2"/>
+      <!-- Nose highlight -->
+      <ellipse cx="496" cy="417" rx="6" ry="4" fill="#ffffff" opacity="0.3"/>
+
+      <!-- Mouth -->
+      <path d="M 488 432 Q 500 445 512 432" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+      <!-- Mouth center line -->
+      <line x1="500" y1="430" x2="500" y2="440" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+  </g>
+</svg>

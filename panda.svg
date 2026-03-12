@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <g id="background">
+    <rect x="0" y="0" width="1000" height="1000" fill="#f1f5f9" />
+  </g>
+  <g id="body">
+    <!-- Body -->
+    <ellipse cx="500" cy="620" rx="160" ry="190" fill="#f1f5f9" stroke="#0f172a" stroke-width="6" />
+    <!-- Left arm -->
+    <ellipse cx="370" cy="580" rx="50" ry="80" fill="#0f172a" stroke="#0f172a" stroke-width="4" transform="rotate(-15, 370, 580)" />
+    <!-- Right arm -->
+    <ellipse cx="630" cy="580" rx="50" ry="80" fill="#0f172a" stroke="#0f172a" stroke-width="4" transform="rotate(15, 630, 580)" />
+    <!-- Left leg -->
+    <ellipse cx="430" cy="790" rx="55" ry="45" fill="#0f172a" stroke="#0f172a" stroke-width="4" />
+    <!-- Right leg -->
+    <ellipse cx="570" cy="790" rx="55" ry="45" fill="#0f172a" stroke="#0f172a" stroke-width="4" />
+  </g>
+  <g id="head">
+    <!-- Head -->
+    <circle cx="500" cy="350" r="150" fill="#f1f5f9" stroke="#0f172a" stroke-width="6" />
+    <!-- Left ear -->
+    <circle cx="380" cy="230" r="50" fill="#0f172a" stroke="#0f172a" stroke-width="4" />
+    <!-- Right ear -->
+    <circle cx="620" cy="230" r="50" fill="#0f172a" stroke="#0f172a" stroke-width="4" />
+  </g>
+  <g id="face">
+    <!-- Left eye patch -->
+    <ellipse cx="440" cy="340" rx="55" ry="45" fill="#0f172a" transform="rotate(-10, 440, 340)" />
+    <!-- Right eye patch -->
+    <ellipse cx="560" cy="340" rx="55" ry="45" fill="#0f172a" transform="rotate(10, 560, 340)" />
+    <!-- Left eye -->
+    <ellipse cx="445" cy="335" rx="20" ry="22" fill="#f1f5f9" />
+    <!-- Left pupil -->
+    <circle cx="450" cy="338" r="10" fill="#0f172a" />
+    <!-- Left eye glint -->
+    <circle cx="454" cy="333" r="4" fill="#f1f5f9" />
+    <!-- Right eye -->
+    <ellipse cx="555" cy="335" rx="20" ry="22" fill="#f1f5f9" />
+    <!-- Right pupil -->
+    <circle cx="550" cy="338" r="10" fill="#0f172a" />
+    <!-- Right eye glint -->
+    <circle cx="546" cy="333" r="4" fill="#f1f5f9" />
+    <!-- Nose -->
+    <ellipse cx="500" cy="390" rx="18" ry="12" fill="#334155" />
+    <!-- Mouth -->
+    <path d="M 488 405 Q 500 420 512 405" fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round" />
+  </g>
+  <g id="details">
+    <!-- Belly patch -->
+    <ellipse cx="500" cy="630" rx="95" ry="110" fill="#f1f5f9" stroke="#334155" stroke-width="3" stroke-dasharray="4,6" opacity="0.4" />
+  </g>
+</svg>
