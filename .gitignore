@@ -19,3 +19,8 @@ package-lock.json
 # Temporary files
 *.tmp
 *.bak
+
+# Generated SVG output (keep examples/ only)
+/*.svg
+story/
+curiosity-cards/
