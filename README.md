@@ -53,6 +53,16 @@ animate the fish swimming
 
 Output is written as `.svg` files in your working directory.
 
+### Iterative editing in action
+
+Start with a simple scene, then build on it with follow-up prompts:
+
+| "draw a penguin on grass" | → "add a tree, flowers, a scarf, and change the sky to sunset" |
+|:---:|:---:|
+| <img src="examples/edit-before.svg" width="400"> | <img src="examples/edit-after.svg" width="400"> |
+
+Each edit modifies the existing SVG — the penguin stays exactly where it is while new elements are added around it.
+
 ## What it's great at
 
 - **Geometric art style** — Characters and animals are built from simple shapes (circles, ellipses, rectangles, polygons). This isn't a limitation — it's a deliberate design choice. LLMs can place geometric primitives with precision, producing a consistent logo-art aesthetic that looks clean and intentional every time.

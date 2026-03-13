@@ -1,0 +1,131 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunset-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff7e5f"/>
+      <stop offset="40%" stop-color="#feb47b"/>
+      <stop offset="70%" stop-color="#ffcf8a"/>
+      <stop offset="100%" stop-color="#d4eeff"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ab04c"/>
+      <stop offset="100%" stop-color="#4a8a2c"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3a0"/>
+      <stop offset="50%" stop-color="#ffd74040"/>
+      <stop offset="100%" stop-color="#ffd74000"/>
+    </radialGradient>
+    <radialGradient id="pip-body" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a2a5e"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </radialGradient>
+    <radialGradient id="pip-belly" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dde0f0"/>
+    </radialGradient>
+    <radialGradient id="pip-face" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8e8f5"/>
+    </radialGradient>
+    <radialGradient id="trunk-grad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#5a3e0a"/>
+    </radialGradient>
+    <radialGradient id="canopy1" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5cb85c"/>
+      <stop offset="100%" stop-color="#2d7a2d"/>
+    </radialGradient>
+    <radialGradient id="canopy2" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#6fcf6f"/>
+      <stop offset="100%" stop-color="#3a8f3a"/>
+    </radialGradient>
+    <radialGradient id="flower-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff176"/>
+      <stop offset="100%" stop-color="#ffeb3b"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sunset sky (was plain blue) -->
+  <rect width="1000" height="600" fill="url(#sunset-sky)"/>
+
+  <!-- Setting sun -->
+  <circle cx="800" cy="350" r="120" fill="url(#sun-glow)"/>
+  <circle cx="800" cy="350" r="45" fill="#fff3a0"/>
+
+  <!-- Clouds tinted warm -->
+  <g opacity="0.5">
+    <ellipse cx="200" cy="120" rx="70" ry="25" fill="#ffd8b0"/>
+    <ellipse cx="170" cy="115" rx="40" ry="20" fill="#ffe0c0"/>
+    <ellipse cx="240" cy="118" rx="35" ry="18" fill="#ffd8b0"/>
+  </g>
+  <g opacity="0.4">
+    <ellipse cx="600" cy="160" rx="55" ry="20" fill="#ffc8a0"/>
+    <ellipse cx="630" cy="155" rx="35" ry="16" fill="#ffd0b0"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="600" width="1000" height="400" fill="url(#ground)"/>
+  <ellipse cx="500" cy="610" rx="500" ry="20" fill="#7ac05c"/>
+
+  <!-- Tree (added) -->
+  <g id="tree-1" transform="translate(180, 350)">
+    <rect x="-18" y="0" width="36" height="250" fill="url(#trunk-grad)" rx="8"/>
+    <ellipse cx="0" cy="-10" rx="95" ry="85" fill="url(#canopy1)"/>
+    <ellipse cx="-20" cy="-40" rx="55" ry="50" fill="url(#canopy2)"/>
+    <ellipse cx="30" cy="-30" rx="50" ry="48" fill="url(#canopy1)"/>
+  </g>
+
+  <!-- Flowers (added) -->
+  <g id="flowers">
+    <g transform="translate(380, 660)">
+      <rect x="-2" y="0" width="4" height="30" fill="#3a8a2c" rx="2"/>
+      <circle cx="0" cy="-6" r="10" fill="#ff6b8a"/>
+      <circle cx="0" cy="-6" r="5" fill="url(#flower-center)"/>
+    </g>
+    <g transform="translate(620, 650)">
+      <rect x="-2" y="0" width="4" height="28" fill="#3a8a2c" rx="2"/>
+      <circle cx="0" cy="-6" r="9" fill="#ba68c8"/>
+      <circle cx="0" cy="-6" r="4.5" fill="url(#flower-center)"/>
+    </g>
+    <g transform="translate(750, 665)">
+      <rect x="-2" y="0" width="4" height="25" fill="#3a8a2c" rx="2"/>
+      <circle cx="0" cy="-5" r="8" fill="#64b5f6"/>
+      <circle cx="0" cy="-5" r="4" fill="url(#flower-center)"/>
+    </g>
+    <g transform="translate(440, 675)">
+      <rect x="-2" y="0" width="4" height="22" fill="#3a8a2c" rx="2"/>
+      <circle cx="0" cy="-5" r="7" fill="#ff6b8a"/>
+      <circle cx="0" cy="-5" r="3.5" fill="url(#flower-center)"/>
+    </g>
+  </g>
+
+  <!-- Penguin (unchanged from original position) -->
+  <g id="penguin-1" transform="translate(500, 700)">
+    <ellipse cx="0" cy="-60" rx="55" ry="68" fill="url(#pip-body)"/>
+    <ellipse cx="0" cy="-42" rx="37" ry="52" fill="url(#pip-belly)"/>
+    <circle cx="0" cy="-145" r="42" fill="url(#pip-body)"/>
+    <circle cx="0" cy="-141" r="30" fill="url(#pip-face)"/>
+    <circle cx="-12" cy="-148" r="8" fill="#1a1a3e"/>
+    <circle cx="-9" cy="-150" r="3" fill="white"/>
+    <circle cx="12" cy="-148" r="8" fill="#1a1a3e"/>
+    <circle cx="15" cy="-150" r="3" fill="white"/>
+    <polygon points="-6,-134 6,-134 0,-124" fill="#ff8c00"/>
+    <ellipse cx="-62" cy="-65" rx="14" ry="35" fill="#1a1a3e" transform="rotate(12, -62, -65)"/>
+    <ellipse cx="62" cy="-65" rx="14" ry="35" fill="#1a1a3e" transform="rotate(-12, 62, -65)"/>
+    <ellipse cx="-18" cy="2" rx="16" ry="8" fill="#ff8c00"/>
+    <ellipse cx="18" cy="2" rx="16" ry="8" fill="#ff8c00"/>
+    <!-- Scarf (added) -->
+    <rect x="-30" y="-105" width="60" height="14" fill="#e04040" rx="6"/>
+    <rect x="20" y="-105" width="12" height="35" fill="#e04040" rx="4"/>
+    <rect x="20" y="-102" width="12" height="10" fill="#c03030" rx="3"/>
+    <circle cx="-22" cy="-132" r="7" fill="#ffb3b3" opacity="0.4"/>
+    <circle cx="22" cy="-132" r="7" fill="#ffb3b3" opacity="0.4"/>
+  </g>
+
+  <!-- Distant birds -->
+  <g stroke="#555" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M650,200 Q655,195 660,200 Q665,195 670,200"/>
+    <path d="M700,170 Q704,166 708,170 Q712,166 716,170"/>
+    <path d="M580,230 Q584,226 588,230 Q592,226 596,230"/>
+  </g>
+</svg>
