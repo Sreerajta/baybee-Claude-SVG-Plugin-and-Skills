@@ -24,6 +24,14 @@ SVG drawing and animation plugin for [Claude Code](https://docs.anthropic.com/en
 
 <img src="examples/login-flowchart.svg" width="500">
 
+> "create a line illustration of a bustling cityscape at night"
+
+<img src="examples/cityscape-night.svg" width="500">
+
+> "now make one neon style"
+
+<img src="examples/cityscape-neon.svg" width="500">
+
 ## Install
 
 ```
