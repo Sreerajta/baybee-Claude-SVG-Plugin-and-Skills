@@ -4,21 +4,17 @@ SVG drawing and animation plugin for [Claude Code](https://docs.anthropic.com/en
 
 ## Examples
 
-> "draw a panda"
+> "draw a fox sitting in an autumn forest"
 
-<img src="examples/panda.svg" width="400">
+<img src="examples/fox-autumn.svg" width="500">
 
-> "draw a beach scene with a shack"
+> "draw an underwater coral reef with fish and a sea turtle"
 
-<img src="examples/beach-scene.svg" width="500">
+<img src="examples/coral-reef.svg" width="500">
 
-> "draw a neon cat icon"
+> "draw a cozy cabin in the snow at night"
 
-<img src="examples/neon-cat.svg" width="400">
-
-> "animate fish swimming in an ocean"
-
-<img src="examples/ocean-scene.svg" width="500">
+<img src="examples/cabin-night.svg" width="500">
 
 > "draw a flowchart for user login"
 

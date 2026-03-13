@@ -1,0 +1,316 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a6aaa"/>
+      <stop offset="40%" stop-color="#085888"/>
+      <stop offset="100%" stop-color="#04304a"/>
+    </linearGradient>
+    <radialGradient id="light-ray" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4b880"/>
+      <stop offset="100%" stop-color="#b09060"/>
+    </linearGradient>
+    <radialGradient id="coral-pink" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ff6b8a"/>
+      <stop offset="100%" stop-color="#d04060"/>
+    </radialGradient>
+    <radialGradient id="coral-orange" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#ff8a50"/>
+      <stop offset="100%" stop-color="#d06030"/>
+    </radialGradient>
+    <radialGradient id="coral-purple" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ba68c8"/>
+      <stop offset="100%" stop-color="#8a3898"/>
+    </radialGradient>
+    <radialGradient id="coral-yellow" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffd740"/>
+      <stop offset="100%" stop-color="#d0a020"/>
+    </radialGradient>
+    <radialGradient id="coral-teal" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#26c6da"/>
+      <stop offset="100%" stop-color="#1098a8"/>
+    </radialGradient>
+    <radialGradient id="fish-blue" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#42a5f5"/>
+      <stop offset="100%" stop-color="#1a70c0"/>
+    </radialGradient>
+    <radialGradient id="fish-yellow" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#ffee58"/>
+      <stop offset="100%" stop-color="#f9a825"/>
+    </radialGradient>
+    <radialGradient id="fish-clown" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ff8a40"/>
+      <stop offset="100%" stop-color="#e05a10"/>
+    </radialGradient>
+    <radialGradient id="fish-green" cx="45%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#66bb6a"/>
+      <stop offset="100%" stop-color="#388e3c"/>
+    </radialGradient>
+    <radialGradient id="bubble" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </radialGradient>
+    <radialGradient id="jellyfish-body" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#e8a0f0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#c060d0" stop-opacity="0.4"/>
+    </radialGradient>
+    <radialGradient id="turtle-shell" cx="48%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#6d9a3a"/>
+      <stop offset="100%" stop-color="#4a7020"/>
+    </radialGradient>
+    <radialGradient id="turtle-body" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#5a8830"/>
+      <stop offset="100%" stop-color="#3a6018"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ocean water -->
+  <rect width="1000" height="1000" fill="url(#water)"/>
+
+  <!-- Light rays from surface -->
+  <polygon points="250,0 380,500 120,500" fill="url(#light-ray)"/>
+  <polygon points="500,0 600,450 400,450" fill="url(#light-ray)"/>
+  <polygon points="750,0 850,480 650,480" fill="url(#light-ray)"/>
+
+  <!-- Sandy ocean floor -->
+  <ellipse cx="500" cy="920" rx="550" ry="100" fill="url(#sand)"/>
+  <ellipse cx="500" cy="930" rx="520" ry="80" fill="#c0a070"/>
+
+  <!-- Sand ripples -->
+  <path d="M100,910 Q200,900 300,910 Q400,920 500,910 Q600,900 700,910 Q800,920 900,910" stroke="#b09060" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M150,930 Q250,922 350,930 Q450,938 550,930 Q650,922 750,930 Q850,938 950,930" stroke="#b09060" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- === CORAL FORMATIONS === -->
+  <!-- Brain coral - center -->
+  <g transform="translate(500, 840)">
+    <ellipse cx="0" cy="0" rx="55" ry="40" fill="url(#coral-pink)"/>
+    <path d="M-40,-10 Q-20,-20 0,-8 Q20,-20 40,-10" stroke="#c03050" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M-35,5 Q-15,-5 5,8 Q25,-5 45,5" stroke="#c03050" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M-30,18 Q-10,10 10,20 Q30,10 45,18" stroke="#c03050" stroke-width="2" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- Branching coral - left -->
+  <g transform="translate(200, 820)">
+    <path d="M0,40 L0,0 L-20,-40 M0,0 L15,-35 M0,10 L-30,-10 M0,15 L25,0" stroke="#ff6b8a" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="-20" cy="-42" r="6" fill="url(#coral-pink)"/>
+    <circle cx="15" cy="-37" r="5" fill="url(#coral-pink)"/>
+    <circle cx="-30" cy="-12" r="5" fill="url(#coral-pink)"/>
+    <circle cx="25" cy="-2" r="5" fill="url(#coral-pink)"/>
+  </g>
+
+  <!-- Fan coral - right -->
+  <g transform="translate(780, 800)">
+    <rect x="-4" y="0" width="8" height="60" fill="#d06030" rx="3"/>
+    <ellipse cx="0" cy="-15" rx="50" ry="55" fill="url(#coral-orange)" opacity="0.8"/>
+    <!-- Fan lines -->
+    <line x1="0" y1="0" x2="-30" y2="-50" stroke="#b05020" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="0" x2="-15" y2="-55" stroke="#b05020" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="0" x2="0" y2="-60" stroke="#b05020" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="0" x2="15" y2="-55" stroke="#b05020" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="0" x2="30" y2="-50" stroke="#b05020" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- Tube coral - far left -->
+  <g transform="translate(80, 830)">
+    <ellipse cx="0" cy="0" rx="8" ry="35" fill="url(#coral-yellow)"/>
+    <ellipse cx="15" cy="5" rx="7" ry="30" fill="url(#coral-yellow)"/>
+    <ellipse cx="-12" cy="8" rx="7" ry="28" fill="url(#coral-yellow)"/>
+    <ellipse cx="28" cy="10" rx="6" ry="25" fill="url(#coral-yellow)"/>
+    <circle cx="0" cy="-35" r="5" fill="#ffd740" opacity="0.8"/>
+    <circle cx="15" cy="-25" r="4" fill="#ffd740" opacity="0.8"/>
+    <circle cx="-12" cy="-20" r="4" fill="#ffd740" opacity="0.8"/>
+    <circle cx="28" cy="-15" r="3.5" fill="#ffd740" opacity="0.8"/>
+  </g>
+
+  <!-- Purple coral cluster -->
+  <g transform="translate(650, 850)">
+    <ellipse cx="0" cy="0" rx="35" ry="28" fill="url(#coral-purple)"/>
+    <ellipse cx="30" cy="-5" rx="25" ry="22" fill="url(#coral-purple)"/>
+    <ellipse cx="-25" cy="5" rx="22" ry="20" fill="url(#coral-purple)"/>
+    <ellipse cx="12" cy="-20" rx="18" ry="15" fill="#c878d8" opacity="0.6"/>
+  </g>
+
+  <!-- Teal coral -->
+  <g transform="translate(380, 860)">
+    <path d="M0,30 L0,0 L-15,-30 M0,5 L18,-25 M0,12 L-25,-5 M0,18 L22,8" stroke="#1098a8" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <circle cx="-15" cy="-32" r="5" fill="url(#coral-teal)"/>
+    <circle cx="18" cy="-27" r="4.5" fill="url(#coral-teal)"/>
+    <circle cx="-25" cy="-7" r="4" fill="url(#coral-teal)"/>
+    <circle cx="22" cy="6" r="4" fill="url(#coral-teal)"/>
+  </g>
+
+  <!-- Seaweed -->
+  <path d="M300,920 Q290,870 305,830 Q320,790 300,750" stroke="#2a8a4a" stroke-width="7" fill="none" stroke-linecap="round">
+    <animate attributeName="d" values="M300,920 Q290,870 305,830 Q320,790 300,750;M300,920 Q310,870 295,830 Q280,790 300,750;M300,920 Q290,870 305,830 Q320,790 300,750" dur="4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M315,920 Q325,880 310,850 Q295,820 315,780" stroke="#3aa05a" stroke-width="5" fill="none" stroke-linecap="round">
+    <animate attributeName="d" values="M315,920 Q325,880 310,850 Q295,820 315,780;M315,920 Q305,880 320,850 Q335,820 315,780;M315,920 Q325,880 310,850 Q295,820 315,780" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M900,920 Q890,875 905,840 Q920,805 900,770" stroke="#2a8a4a" stroke-width="6" fill="none" stroke-linecap="round">
+    <animate attributeName="d" values="M900,920 Q890,875 905,840 Q920,805 900,770;M900,920 Q910,875 895,840 Q880,805 900,770;M900,920 Q890,875 905,840 Q920,805 900,770" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- === SEA TURTLE === -->
+  <g id="turtle" transform="translate(600, 350)">
+    <!-- Flippers -->
+    <ellipse cx="-55" cy="15" rx="30" ry="10" fill="url(#turtle-body)" transform="rotate(-30,-55,15)"/>
+    <ellipse cx="55" cy="15" rx="30" ry="10" fill="url(#turtle-body)" transform="rotate(30,55,15)"/>
+    <ellipse cx="-40" cy="40" rx="22" ry="8" fill="url(#turtle-body)" transform="rotate(20,-40,40)"/>
+    <ellipse cx="40" cy="40" rx="22" ry="8" fill="url(#turtle-body)" transform="rotate(-20,40,40)"/>
+    <!-- Shell -->
+    <ellipse cx="0" cy="10" rx="50" ry="38" fill="url(#turtle-shell)"/>
+    <!-- Shell pattern -->
+    <ellipse cx="0" cy="5" rx="18" ry="14" fill="#5a8830" stroke="#4a7020" stroke-width="1.5"/>
+    <path d="M-18,5 Q-35,0 -42,15" stroke="#4a7020" stroke-width="1.5" fill="none"/>
+    <path d="M18,5 Q35,0 42,15" stroke="#4a7020" stroke-width="1.5" fill="none"/>
+    <path d="M-10,18 Q-20,30 -35,32" stroke="#4a7020" stroke-width="1.5" fill="none"/>
+    <path d="M10,18 Q20,30 35,32" stroke="#4a7020" stroke-width="1.5" fill="none"/>
+    <path d="M0,18 Q0,35 0,42" stroke="#4a7020" stroke-width="1.5" fill="none"/>
+    <!-- Head -->
+    <ellipse cx="-55" cy="-5" rx="18" ry="14" fill="url(#turtle-body)"/>
+    <circle cx="-65" cy="-10" r="4" fill="#1a2a0a"/>
+    <circle cx="-63" cy="-11" r="1.5" fill="white"/>
+    <!-- Tail -->
+    <polygon points="48,25 60,28 50,32" fill="url(#turtle-body)"/>
+    <!-- Animation - gentle swim -->
+    <animateTransform attributeName="transform" type="translate" values="600,350;580,340;600,350" dur="6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- === FISH === -->
+  <!-- Clownfish near anemone -->
+  <g id="clownfish" transform="translate(520, 760)">
+    <ellipse cx="0" cy="0" rx="22" ry="13" fill="url(#fish-clown)"/>
+    <rect x="-6" y="-13" width="5" height="26" fill="white" rx="2" opacity="0.8"/>
+    <rect x="6" y="-12" width="4" height="24" fill="white" rx="2" opacity="0.7"/>
+    <polygon points="20,0 32,-8 32,8" fill="#e05a10"/>
+    <circle cx="-12" cy="-3" r="3.5" fill="white"/>
+    <circle cx="-12" cy="-3" r="2" fill="#1a1a3a"/>
+    <circle cx="-11" cy="-4" r="1" fill="white"/>
+    <polygon points="-5,-13 5,-18 8,-10" fill="url(#fish-clown)"/>
+    <animateTransform attributeName="transform" type="translate" values="520,760;530,755;520,760" dur="3s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Sea anemone -->
+  <g transform="translate(530, 810)">
+    <ellipse cx="0" cy="20" rx="30" ry="15" fill="#e06080"/>
+    <path d="M-20,15 Q-22,-5 -18,-20" stroke="#ff6b8a" stroke-width="3" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M-20,15 Q-22,-5 -18,-20;M-20,15 Q-18,-5 -22,-20;M-20,15 Q-22,-5 -18,-20" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-8,15 Q-10,-8 -5,-25" stroke="#ff8aa0" stroke-width="3" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M-8,15 Q-10,-8 -5,-25;M-8,15 Q-6,-8 -10,-25;M-8,15 Q-10,-8 -5,-25" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M5,15 Q3,-8 8,-22" stroke="#ff6b8a" stroke-width="3" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M5,15 Q3,-8 8,-22;M5,15 Q7,-8 3,-22;M5,15 Q3,-8 8,-22" dur="3.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M18,15 Q16,-5 20,-18" stroke="#ff8aa0" stroke-width="3" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M18,15 Q16,-5 20,-18;M18,15 Q20,-5 16,-18;M18,15 Q16,-5 20,-18" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Blue tang school -->
+  <g id="blue-fish-1" transform="translate(150, 300)">
+    <ellipse cx="0" cy="0" rx="18" ry="12" fill="url(#fish-blue)"/>
+    <polygon points="16,0 26,-7 26,7" fill="#1a70c0"/>
+    <circle cx="-8" cy="-2" r="3" fill="white"/><circle cx="-8" cy="-2" r="1.8" fill="#1a1a3a"/>
+    <path d="M-5,5 Q0,2 5,5" stroke="#0a50a0" stroke-width="1.5" fill="none"/>
+    <animateTransform attributeName="transform" type="translate" values="150,300;170,295;150,300" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <g id="blue-fish-2" transform="translate(120, 330)">
+    <ellipse cx="0" cy="0" rx="15" ry="10" fill="url(#fish-blue)"/>
+    <polygon points="14,0 22,-6 22,6" fill="#1a70c0"/>
+    <circle cx="-6" cy="-2" r="2.5" fill="white"/><circle cx="-6" cy="-2" r="1.5" fill="#1a1a3a"/>
+    <animateTransform attributeName="transform" type="translate" values="120,330;138,325;120,330" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+  <g id="blue-fish-3" transform="translate(175, 340)">
+    <ellipse cx="0" cy="0" rx="14" ry="9" fill="url(#fish-blue)"/>
+    <polygon points="12,0 20,-5 20,5" fill="#1a70c0"/>
+    <circle cx="-5" cy="-2" r="2.5" fill="white"/><circle cx="-5" cy="-2" r="1.5" fill="#1a1a3a"/>
+    <animateTransform attributeName="transform" type="translate" values="175,340;190,336;175,340" dur="3.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Yellow tang -->
+  <g id="yellow-fish" transform="translate(800, 500)">
+    <ellipse cx="0" cy="0" rx="20" ry="16" fill="url(#fish-yellow)"/>
+    <polygon points="18,0 30,-9 30,9" fill="#f9a825"/>
+    <polygon points="-5,-16 5,-22 10,-12" fill="url(#fish-yellow)"/>
+    <polygon points="-5,16 5,22 10,12" fill="url(#fish-yellow)"/>
+    <circle cx="-8" cy="-3" r="3.5" fill="white"/><circle cx="-8" cy="-3" r="2" fill="#1a1a3a"/>
+    <circle cx="-7" cy="-4" r="1" fill="white"/>
+    <animateTransform attributeName="transform" type="translate" values="800,500;785,495;800,500" dur="3.5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Green fish -->
+  <g id="green-fish" transform="translate(400, 450)">
+    <ellipse cx="0" cy="0" rx="16" ry="11" fill="url(#fish-green)"/>
+    <polygon points="14,0 24,-6 24,6" fill="#388e3c"/>
+    <circle cx="-7" cy="-2" r="3" fill="white"/><circle cx="-7" cy="-2" r="1.8" fill="#1a1a3a"/>
+    <animateTransform attributeName="transform" type="translate" values="400,450;415,445;400,450" dur="4.2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- === JELLYFISH === -->
+  <g id="jellyfish" transform="translate(850, 250)">
+    <ellipse cx="0" cy="0" rx="30" ry="22" fill="url(#jellyfish-body)"/>
+    <ellipse cx="0" cy="5" rx="26" ry="10" fill="#d080e0" opacity="0.3"/>
+    <!-- Tentacles -->
+    <path d="M-18,20 Q-22,50 -15,75 Q-10,90 -18,100" stroke="#d080e0" stroke-width="2" fill="none" opacity="0.5">
+      <animate attributeName="d" values="M-18,20 Q-22,50 -15,75 Q-10,90 -18,100;M-18,20 Q-14,50 -20,75 Q-25,90 -18,100;M-18,20 Q-22,50 -15,75 Q-10,90 -18,100" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-5,22 Q-8,55 -2,80 Q2,95 -5,108" stroke="#c870d8" stroke-width="2" fill="none" opacity="0.5">
+      <animate attributeName="d" values="M-5,22 Q-8,55 -2,80 Q2,95 -5,108;M-5,22 Q-2,55 -8,80 Q-12,95 -5,108;M-5,22 Q-8,55 -2,80 Q2,95 -5,108" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M10,20 Q14,52 8,78 Q4,92 10,105" stroke="#d080e0" stroke-width="2" fill="none" opacity="0.5">
+      <animate attributeName="d" values="M10,20 Q14,52 8,78 Q4,92 10,105;M10,20 Q6,52 12,78 Q16,92 10,105;M10,20 Q14,52 8,78 Q4,92 10,105" dur="3.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M20,18 Q25,45 18,68 Q12,80 20,90" stroke="#c870d8" stroke-width="1.5" fill="none" opacity="0.4">
+      <animate attributeName="d" values="M20,18 Q25,45 18,68 Q12,80 20,90;M20,18 Q15,45 22,68 Q28,80 20,90;M20,18 Q25,45 18,68 Q12,80 20,90" dur="2.8s" repeatCount="indefinite"/>
+    </path>
+    <!-- Inner glow -->
+    <ellipse cx="0" cy="-2" rx="12" ry="8" fill="#e8b0f0" opacity="0.3"/>
+    <animateTransform attributeName="transform" type="translate" values="850,250;845,240;850,250" dur="5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Bubbles -->
+  <circle cx="250" cy="600" r="8" fill="url(#bubble)" stroke="#ffffff20" stroke-width="0.5">
+    <animate attributeName="cy" values="600;100" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="8;12;8" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="700" r="5" fill="url(#bubble)" stroke="#ffffff15" stroke-width="0.5">
+    <animate attributeName="cy" values="700;50" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="650" r="6" fill="url(#bubble)" stroke="#ffffff18" stroke-width="0.5">
+    <animate attributeName="cy" values="650;80" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="550" r="4" fill="url(#bubble)" stroke="#ffffff12" stroke-width="0.5">
+    <animate attributeName="cy" values="550;30" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="500" r="6" fill="url(#bubble)" stroke="#ffffff18" stroke-width="0.5">
+    <animate attributeName="cy" values="500;60" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Small starfish on sand -->
+  <g transform="translate(750, 890) scale(0.6) rotate(20)">
+    <polygon points="0,-25 6,-8 24,-8 10,4 16,22 0,12 -16,22 -10,4 -24,-8 -6,-8" fill="#f0a040"/>
+    <polygon points="0,-16 4,-6 16,-6 7,2 10,14 0,8 -10,14 -7,2 -16,-6 -4,-6" fill="#f5b860"/>
+  </g>
+
+  <!-- Sea shells -->
+  <ellipse cx="430" cy="905" rx="10" ry="7" fill="#e8d0b0" transform="rotate(-10,430,905)"/>
+  <path d="M422,905 Q430,898 438,905" stroke="#c8a880" stroke-width="1" fill="none"/>
+  <path d="M424,905 Q430,900 436,905" stroke="#c8a880" stroke-width="0.8" fill="none"/>
+
+  <!-- Small sea urchin -->
+  <g transform="translate(160, 885)">
+    <circle cx="0" cy="0" r="12" fill="#1a1a3a"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#2a2a5a" stroke-width="1"/>
+    <line x1="0" y1="-12" x2="0" y2="-20" stroke="#2a2a5a" stroke-width="1.5"/>
+    <line x1="10" y1="-7" x2="16" y2="-12" stroke="#2a2a5a" stroke-width="1.5"/>
+    <line x1="12" y1="0" x2="20" y2="0" stroke="#2a2a5a" stroke-width="1.5"/>
+    <line x1="10" y1="7" x2="16" y2="12" stroke="#2a2a5a" stroke-width="1.5"/>
+    <line x1="-10" y1="-7" x2="-16" y2="-12" stroke="#2a2a5a" stroke-width="1.5"/>
+    <line x1="-12" y1="0" x2="-20" y2="0" stroke="#2a2a5a" stroke-width="1.5"/>
+    <line x1="-10" y1="7" x2="-16" y2="12" stroke="#2a2a5a" stroke-width="1.5"/>
+  </g>
+</svg>
