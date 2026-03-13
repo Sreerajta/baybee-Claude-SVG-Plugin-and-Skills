@@ -53,15 +53,33 @@ animate the fish swimming
 
 Output is written as `.svg` files in your working directory.
 
-## What it can do
+## What it's great at
 
-- **Characters & Animals** — Penguins, pandas, cats, dogs, horses, fish, birds, and more. Built from geometric shapes with polished gradient shading.
-- **Scenes & Environments** — Beaches, forests, farms, oceans, rooms, cities. Multi-layered compositions with backgrounds, subjects, and foreground details.
-- **Diagrams** — Flowcharts, architecture diagrams, system designs, wireframes. Clean node-and-edge layouts.
-- **Animation** — Breathing, swimming, flying, wagging, swaying, drifting. Physics-inspired motion using native SVG `<animate>` and `<animateTransform>`.
-- **Incremental Editing** — Add, remove, move, resize, or restyle elements in an existing SVG without regenerating the whole scene.
-- **Multiple Styles** — Polished (default), minimal, cartoon, neon/cyberpunk, pixel art, wireframe, icon, dark mode.
-- **Procedural Generation** — Forests, starfields, skylines, swarms. Repeating elements with natural variation.
+- **Geometric art style** — Characters and animals are built from simple shapes (circles, ellipses, rectangles, polygons). This isn't a limitation — it's a deliberate design choice. LLMs can place geometric primitives with precision, producing a consistent logo-art aesthetic that looks clean and intentional every time.
+- **Polished shading with gradients** — `<radialGradient>` on rounded surfaces, `<linearGradient>` on flat ones. Gradients only need percentage coordinates, which LLMs handle reliably — so you get depth, highlights, and shading without the unpredictability of complex paths.
+- **Pure SVG, zero dependencies** — Output is a single `.svg` file. No JavaScript, no build step, no runtime. It renders in any browser, scales to any size, and is trivially embeddable.
+- **Iterative scene building** — Build illustrations conversationally. Start with a character, add a background, place objects, tweak colors, add animation — one prompt at a time, without losing what you've already built.
+- **Native SVG animation** — Breathing, swimming, flying, wagging, swaying, drifting — all using `<animate>` and `<animateTransform>`. No JS, no CSS, just SVG that moves.
+- **Semantic structure** — Every element gets a group ID (`<g id="panda-1">`). You can reference any part of the scene by name to move it, restyle it, or animate it.
+- **Scenes, diagrams, and procedural content** — Multi-layered environments, flowcharts, architecture diagrams, and procedurally generated groups (forests, starfields, skylines) with natural variation.
+
+## What to expect
+
+Baybee produces **illustrated, geometric SVG art** — not photorealistic images. Here's what that means in practice:
+
+| Expectation | Reality |
+|-------------|---------|
+| Photorealistic rendering | Geometric/logo art style — charming, not realistic |
+| Complex organic curves | Shapes are built from circles, ellipses, and polygons — not freehand bezier paths |
+| Pixel-perfect consistency | LLM-generated — output quality can vary between runs. Iteration helps. |
+| 3D or perspective | Flat 2D compositions with layering for depth. No perspective projection. |
+| Complex keyframe animation | SVG SMIL animation primitives — oscillation, translation, rotation, scaling. Not full timeline animation. |
+| Arbitrary canvas sizes | Fixed 1000x1000 `viewBox` (scales to any display size, but the internal coordinate space is fixed) |
+| Production design tool | A creative tool for illustrations, prototyping, and fun — not a replacement for Figma or Illustrator |
+
+**Best suited for:** Icons, mascots, illustrated scenes, children's book art, diagrams, quick visual prototypes, educational graphics, and anything where a clean geometric style works.
+
+**Not ideal for:** Photorealism, detailed human portraits, complex typography layouts, or precision technical drawings.
 
 ## How it works
 
@@ -84,22 +102,6 @@ Baybee is composed of 15 skills that handle different aspects of SVG rendering:
 | `baybee-diagram` | Diagram rendering — flowcharts, architecture diagrams, wireframes |
 | `baybee-debug` | Debug overlays — layout grids, bounding boxes, zone visualization |
 | `baybee-validate` | SVG validation — structural checks, repair, and correction |
-
-## Style
-
-The default polished style uses:
-
-- Geometric shapes (circles, ellipses, rectangles, polygons) for all subjects
-- `<radialGradient>` for rounded surfaces, `<linearGradient>` for flat surfaces
-- Eye shine highlights, cheek blush, and surface shading for depth
-- SVG animation primitives (`<animate>`, `<animateTransform>`) for motion
-- Semantic group IDs (`<g id="panda-1">`) for editability
-
-All output renders on a 1000x1000 SVG canvas:
-
-```xml
-<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-```
 
 ## License
 
