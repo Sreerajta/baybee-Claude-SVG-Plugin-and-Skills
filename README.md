@@ -4,9 +4,9 @@ SVG drawing and animation plugin for [Claude Code](https://docs.anthropic.com/en
 
 ## Examples
 
-> "draw a fox sitting in an autumn forest"
+> "draw a cat sitting in a garden"
 
-<img src="examples/fox-autumn.svg" width="500">
+<img src="examples/cat-garden.svg" width="500">
 
 > "draw an underwater coral reef with fish and a sea turtle"
 
@@ -27,6 +27,10 @@ SVG drawing and animation plugin for [Claude Code](https://docs.anthropic.com/en
 > "now make one neon style"
 
 <img src="examples/cityscape-neon.svg" width="500">
+
+> "draw a fox sitting in an autumn forest"
+
+<img src="examples/fox-autumn.svg" width="500">
 
 ## Install
 
