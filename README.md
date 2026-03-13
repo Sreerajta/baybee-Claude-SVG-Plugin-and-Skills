@@ -35,7 +35,7 @@ SVG drawing and animation plugin for [Claude Code](https://docs.anthropic.com/en
 ## Install
 
 ```
-claude install gh:Sreerajta/baybee
+claude install gh:Sreerajta/baybee-Claude-SVG-Plugin-and-Skills
 ```
 
 ## Usage
